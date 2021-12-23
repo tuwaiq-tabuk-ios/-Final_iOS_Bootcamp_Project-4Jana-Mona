@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3913565D27748BDB00716DBB /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3913565C27748BDB00716DBB /* FirebaseManager.swift */; };
+		39BF2BB627735CAD008F1B4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BF2BB527735CAD008F1B4D /* AppDelegate.swift */; };
+		39BF2BB827735CAD008F1B4D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BF2BB727735CAD008F1B4D /* SceneDelegate.swift */; };
+		39BF2BBA27735CAD008F1B4D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BF2BB927735CAD008F1B4D /* ViewController.swift */; };
+		39BF2BBD27735CAD008F1B4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39BF2BBB27735CAD008F1B4D /* Main.storyboard */; };
+		39BF2BBF27735CAE008F1B4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39BF2BBE27735CAE008F1B4D /* Assets.xcassets */; };
+		39BF2BC227735CAE008F1B4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39BF2BC027735CAE008F1B4D /* LaunchScreen.storyboard */; };
+		39BF2BCB2773977C008F1B4D /* ToolCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BF2BC92773977C008F1B4D /* ToolCollectionViewCell.swift */; };
+		39BF2BCE2773979B008F1B4D /* ToolCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39BF2BCD2773979B008F1B4D /* ToolCollectionViewCell.xib */; };
+		39BF2BD227739896008F1B4D /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BF2BD027739896008F1B4D /* HomeCollectionViewCell.swift */; };
+		39BF2BD5277398E3008F1B4D /* HomeCellCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39BF2BD4277398E3008F1B4D /* HomeCellCollectionViewCell.xib */; };
+		39BF2BE227739B9C008F1B4D /* ChatUserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39BF2BDE27739B9C008F1B4D /* ChatUserTableViewCell.xib */; };
+		39BF2BE327739B9C008F1B4D /* ChatUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BF2BDF27739B9C008F1B4D /* ChatUserTableViewCell.swift */; };
+		39BF2BEC27739BC3008F1B4D /* ArticlesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BF2BE827739BC3008F1B4D /* ArticlesTableViewCell.swift */; };
+		39BF2BED27739BC3008F1B4D /* ArticlesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39BF2BE927739BC3008F1B4D /* ArticlesTableViewCell.xib */; };
+		39BF2C0A2773A025008F1B4D /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BF2C062773A025008F1B4D /* ChatViewController.swift */; };
+		39BF2C0B2773A025008F1B4D /* ChatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39BF2C072773A025008F1B4D /* ChatTableViewCell.xib */; };
+		39BF2C0F27745D6D008F1B4D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 39BF2C0E27745D6D008F1B4D /* GoogleService-Info.plist */; };
+		D3390558D9DDB87A45DD317A /* Pods_4JANA_Project_Mona.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2039B79F7493E0B751D32FF /* Pods_4JANA_Project_Mona.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3913565C27748BDB00716DBB /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
+		39BF2BB227735CAD008F1B4D /* 4JANA-Project-Mona.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "4JANA-Project-Mona.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		39BF2BB527735CAD008F1B4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		39BF2BB727735CAD008F1B4D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		39BF2BB927735CAD008F1B4D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		39BF2BBC27735CAD008F1B4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		39BF2BBE27735CAE008F1B4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		39BF2BC127735CAE008F1B4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		39BF2BC327735CAE008F1B4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39BF2BC92773977C008F1B4D /* ToolCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolCollectionViewCell.swift; sourceTree = "<group>"; };
+		39BF2BCD2773979B008F1B4D /* ToolCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ToolCollectionViewCell.xib; sourceTree = "<group>"; };
+		39BF2BD027739896008F1B4D /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		39BF2BD4277398E3008F1B4D /* HomeCellCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeCellCollectionViewCell.xib; sourceTree = "<group>"; };
+		39BF2BDE27739B9C008F1B4D /* ChatUserTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatUserTableViewCell.xib; sourceTree = "<group>"; };
+		39BF2BDF27739B9C008F1B4D /* ChatUserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatUserTableViewCell.swift; sourceTree = "<group>"; };
+		39BF2BE827739BC3008F1B4D /* ArticlesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlesTableViewCell.swift; sourceTree = "<group>"; };
+		39BF2BE927739BC3008F1B4D /* ArticlesTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArticlesTableViewCell.xib; sourceTree = "<group>"; };
+		39BF2C062773A025008F1B4D /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		39BF2C072773A025008F1B4D /* ChatTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatTableViewCell.xib; sourceTree = "<group>"; };
+		39BF2C0E27745D6D008F1B4D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A2A904B17E9D973F8C4820BC /* Pods-4JANA-Project-Mona.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-4JANA-Project-Mona.debug.xcconfig"; path = "Target Support Files/Pods-4JANA-Project-Mona/Pods-4JANA-Project-Mona.debug.xcconfig"; sourceTree = "<group>"; };
+		C2039B79F7493E0B751D32FF /* Pods_4JANA_Project_Mona.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_4JANA_Project_Mona.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEB61C4D37AE9D55C8CADF82 /* Pods-4JANA-Project-Mona.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-4JANA-Project-Mona.release.xcconfig"; path = "Target Support Files/Pods-4JANA-Project-Mona/Pods-4JANA-Project-Mona.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		39BF2BAF27735CAD008F1B4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3390558D9DDB87A45DD317A /* Pods_4JANA_Project_Mona.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		39BF2BA927735CAD008F1B4D = {
+			isa = PBXGroup;
+			children = (
+				39BF2BB427735CAD008F1B4D /* 4JANA-Project-Mona */,
+				39BF2BB327735CAD008F1B4D /* Products */,
+				72018B9988B2CFCE8AB91BB2 /* Pods */,
+				DCF43E16220E80C9AAAA5493 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		39BF2BB327735CAD008F1B4D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				39BF2BB227735CAD008F1B4D /* 4JANA-Project-Mona.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		39BF2BB427735CAD008F1B4D /* 4JANA-Project-Mona */ = {
+			isa = PBXGroup;
+			children = (
+				39BF2BB527735CAD008F1B4D /* AppDelegate.swift */,
+				39BF2BB727735CAD008F1B4D /* SceneDelegate.swift */,
+				39BF2BB927735CAD008F1B4D /* ViewController.swift */,
+				3913565C27748BDB00716DBB /* FirebaseManager.swift */,
+				39BF2BBB27735CAD008F1B4D /* Main.storyboard */,
+				39BF2BBE27735CAE008F1B4D /* Assets.xcassets */,
+				39BF2BC027735CAE008F1B4D /* LaunchScreen.storyboard */,
+				39BF2BC327735CAE008F1B4D /* Info.plist */,
+				39BF2C0E27745D6D008F1B4D /* GoogleService-Info.plist */,
+				39BF2BD9277399A1008F1B4D /* TableView */,
+				39BF2C0427739F84008F1B4D /* CollectionView */,
+			);
+			path = "4JANA-Project-Mona";
+			sourceTree = "<group>";
+		};
+		39BF2BCF277397DB008F1B4D /* ToolCell */ = {
+			isa = PBXGroup;
+			children = (
+				39BF2BC92773977C008F1B4D /* ToolCollectionViewCell.swift */,
+				39BF2BCD2773979B008F1B4D /* ToolCollectionViewCell.xib */,
+			);
+			path = ToolCell;
+			sourceTree = "<group>";
+		};
+		39BF2BD6277398F9008F1B4D /* HomeCell */ = {
+			isa = PBXGroup;
+			children = (
+				39BF2BD027739896008F1B4D /* HomeCollectionViewCell.swift */,
+				39BF2BD4277398E3008F1B4D /* HomeCellCollectionViewCell.xib */,
+			);
+			path = HomeCell;
+			sourceTree = "<group>";
+		};
+		39BF2BD9277399A1008F1B4D /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				39BF2C052773A025008F1B4D /* Chat */,
+				39BF2BE727739BC3008F1B4D /* Articles */,
+				39BF2BDD27739B9C008F1B4D /* ChatUser */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		39BF2BDD27739B9C008F1B4D /* ChatUser */ = {
+			isa = PBXGroup;
+			children = (
+				39BF2BDF27739B9C008F1B4D /* ChatUserTableViewCell.swift */,
+				39BF2BDE27739B9C008F1B4D /* ChatUserTableViewCell.xib */,
+			);
+			path = ChatUser;
+			sourceTree = "<group>";
+		};
+		39BF2BE727739BC3008F1B4D /* Articles */ = {
+			isa = PBXGroup;
+			children = (
+				39BF2BE827739BC3008F1B4D /* ArticlesTableViewCell.swift */,
+				39BF2BE927739BC3008F1B4D /* ArticlesTableViewCell.xib */,
+			);
+			path = Articles;
+			sourceTree = "<group>";
+		};
+		39BF2C0427739F84008F1B4D /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				39BF2BCF277397DB008F1B4D /* ToolCell */,
+				39BF2BD6277398F9008F1B4D /* HomeCell */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		39BF2C052773A025008F1B4D /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				39BF2C062773A025008F1B4D /* ChatViewController.swift */,
+				39BF2C072773A025008F1B4D /* ChatTableViewCell.xib */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		72018B9988B2CFCE8AB91BB2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A2A904B17E9D973F8C4820BC /* Pods-4JANA-Project-Mona.debug.xcconfig */,
+				FEB61C4D37AE9D55C8CADF82 /* Pods-4JANA-Project-Mona.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DCF43E16220E80C9AAAA5493 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C2039B79F7493E0B751D32FF /* Pods_4JANA_Project_Mona.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		39BF2BB127735CAD008F1B4D /* 4JANA-Project-Mona */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39BF2BC627735CAE008F1B4D /* Build configuration list for PBXNativeTarget "4JANA-Project-Mona" */;
+			buildPhases = (
+				CBB852E1524C0E41D89E8355 /* [CP] Check Pods Manifest.lock */,
+				39BF2BAE27735CAD008F1B4D /* Sources */,
+				39BF2BAF27735CAD008F1B4D /* Frameworks */,
+				39BF2BB027735CAD008F1B4D /* Resources */,
+				CEF56771FE6ABCBD8866D510 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "4JANA-Project-Mona";
+			productName = "4JANA-Project-Mona";
+			productReference = 39BF2BB227735CAD008F1B4D /* 4JANA-Project-Mona.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		39BF2BAA27735CAD008F1B4D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					39BF2BB127735CAD008F1B4D = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 39BF2BAD27735CAD008F1B4D /* Build configuration list for PBXProject "4JANA-Project-Mona" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 39BF2BA927735CAD008F1B4D;
+			productRefGroup = 39BF2BB327735CAD008F1B4D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				39BF2BB127735CAD008F1B4D /* 4JANA-Project-Mona */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		39BF2BB027735CAD008F1B4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39BF2BE227739B9C008F1B4D /* ChatUserTableViewCell.xib in Resources */,
+				39BF2C0B2773A025008F1B4D /* ChatTableViewCell.xib in Resources */,
+				39BF2BCE2773979B008F1B4D /* ToolCollectionViewCell.xib in Resources */,
+				39BF2BC227735CAE008F1B4D /* LaunchScreen.storyboard in Resources */,
+				39BF2BD5277398E3008F1B4D /* HomeCellCollectionViewCell.xib in Resources */,
+				39BF2BBF27735CAE008F1B4D /* Assets.xcassets in Resources */,
+				39BF2BED27739BC3008F1B4D /* ArticlesTableViewCell.xib in Resources */,
+				39BF2BBD27735CAD008F1B4D /* Main.storyboard in Resources */,
+				39BF2C0F27745D6D008F1B4D /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CBB852E1524C0E41D89E8355 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-4JANA-Project-Mona-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CEF56771FE6ABCBD8866D510 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-4JANA-Project-Mona/Pods-4JANA-Project-Mona-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-4JANA-Project-Mona/Pods-4JANA-Project-Mona-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-4JANA-Project-Mona/Pods-4JANA-Project-Mona-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		39BF2BAE27735CAD008F1B4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39BF2BEC27739BC3008F1B4D /* ArticlesTableViewCell.swift in Sources */,
+				39BF2BE327739B9C008F1B4D /* ChatUserTableViewCell.swift in Sources */,
+				39BF2BD227739896008F1B4D /* HomeCollectionViewCell.swift in Sources */,
+				3913565D27748BDB00716DBB /* FirebaseManager.swift in Sources */,
+				39BF2BBA27735CAD008F1B4D /* ViewController.swift in Sources */,
+				39BF2BB627735CAD008F1B4D /* AppDelegate.swift in Sources */,
+				39BF2BCB2773977C008F1B4D /* ToolCollectionViewCell.swift in Sources */,
+				39BF2C0A2773A025008F1B4D /* ChatViewController.swift in Sources */,
+				39BF2BB827735CAD008F1B4D /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		39BF2BBB27735CAD008F1B4D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39BF2BBC27735CAD008F1B4D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		39BF2BC027735CAE008F1B4D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39BF2BC127735CAE008F1B4D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		39BF2BC427735CAE008F1B4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		39BF2BC527735CAE008F1B4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		39BF2BC727735CAE008F1B4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2A904B17E9D973F8C4820BC /* Pods-4JANA-Project-Mona.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S2J33S59Q6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "4JANA-Project-Mona/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mona.-JANA-Project-Mona";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		39BF2BC827735CAE008F1B4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEB61C4D37AE9D55C8CADF82 /* Pods-4JANA-Project-Mona.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S2J33S59Q6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "4JANA-Project-Mona/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mona.-JANA-Project-Mona";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		39BF2BAD27735CAD008F1B4D /* Build configuration list for PBXProject "4JANA-Project-Mona" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39BF2BC427735CAE008F1B4D /* Debug */,
+				39BF2BC527735CAE008F1B4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39BF2BC627735CAE008F1B4D /* Build configuration list for PBXNativeTarget "4JANA-Project-Mona" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39BF2BC727735CAE008F1B4D /* Debug */,
+				39BF2BC827735CAE008F1B4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 39BF2BAA27735CAD008F1B4D /* Project object */;
+}
