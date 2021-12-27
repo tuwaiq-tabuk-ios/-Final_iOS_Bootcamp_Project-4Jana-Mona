@@ -1,0 +1,656 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TRO-CE-5wg">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Metropolis-Medium.otf">
+            <string>Metropolis-Medium</string>
+        </array>
+        <array key="Metropolis-Regular.otf">
+            <string>Metropolis-Regular</string>
+        </array>
+        <array key="Metropolis-SemiBold.otf">
+            <string>Metropolis-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Sign In View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="SignInViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="SignInViewController" customModule="Jana" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="IQPreviousNextView" customModule="IQKeyboardManagerSwift">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="U8G-lt-JLe">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nn6-he-twp">
+                                        <rect key="frame" x="20" y="0.0" width="374" height="76"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="dlU-wf-S48">
+                                        <rect key="frame" x="20" y="76" width="374" height="68.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2G2-Nn-eJe">
+                                                <rect key="frame" x="150" y="0.0" width="74.5" height="35"/>
+                                                <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="30"/>
+                                                <color key="textColor" red="0.29019607843137252" green="0.29411764705882354" blue="0.30196078431372547" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add your details to login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4lH-Hh-rhk">
+                                                <rect key="frame" x="111" y="52" width="152.5" height="16.5"/>
+                                                <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="14"/>
+                                                <color key="textColor" red="0.48627450980392156" green="0.49019607843137253" blue="0.49411764705882355" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZZM-qn-XxL">
+                                        <rect key="frame" x="20" y="144.5" width="374" height="113.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Jry-HG-CdJ">
+                                        <rect key="frame" x="20" y="258" width="374" height="308"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="jMR-9a-dHA">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="127"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e4N-q0-t01">
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="56"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fln-YM-FHu">
+                                                                <rect key="frame" x="20" y="5" width="334" height="46"/>
+                                                                <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                                                                        <color key="value" red="0.71372549019607845" green="0.71764705882352942" blue="0.71764705882352942" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </textField>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="fln-YM-FHu" secondAttribute="trailing" constant="20" id="29O-ny-87O"/>
+                                                            <constraint firstAttribute="height" constant="56" id="Jdv-vf-6Qp"/>
+                                                            <constraint firstAttribute="bottom" secondItem="fln-YM-FHu" secondAttribute="bottom" constant="5" id="p0r-08-CuT"/>
+                                                            <constraint firstItem="fln-YM-FHu" firstAttribute="leading" secondItem="e4N-q0-t01" secondAttribute="leading" constant="20" id="t83-3u-SLo"/>
+                                                            <constraint firstItem="fln-YM-FHu" firstAttribute="top" secondItem="e4N-q0-t01" secondAttribute="top" constant="5" id="tEj-EO-5Iz"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="15"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rw3-nd-awT">
+                                                        <rect key="frame" x="0.0" y="71" width="374" height="56"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UoI-Yw-520">
+                                                                <rect key="frame" x="20" y="5" width="334" height="46"/>
+                                                                <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                                                                        <color key="value" red="0.71372549019607845" green="0.71764705882352942" blue="0.71764705882352942" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </textField>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstItem="UoI-Yw-520" firstAttribute="leading" secondItem="Rw3-nd-awT" secondAttribute="leading" constant="20" id="1Ka-Bg-dt9"/>
+                                                            <constraint firstAttribute="bottom" secondItem="UoI-Yw-520" secondAttribute="bottom" constant="5" id="PYN-kx-7Pv"/>
+                                                            <constraint firstItem="UoI-Yw-520" firstAttribute="top" secondItem="Rw3-nd-awT" secondAttribute="top" constant="5" id="Pjw-4h-Qlg"/>
+                                                            <constraint firstAttribute="trailing" secondItem="UoI-Yw-520" secondAttribute="trailing" constant="20" id="d6l-G0-mHI"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="15"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yf3-g0-bAm">
+                                                <rect key="frame" x="0.0" y="157" width="374" height="10"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="10" id="6uf-DX-k7x"/>
+                                                </constraints>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zrv-Zy-BBY">
+                                                <rect key="frame" x="0.0" y="197" width="374" height="56"/>
+                                                <color key="backgroundColor" name="PrimaryColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Login">
+                                                    <fontDescription key="titleFontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="14"/>
+                                                    <color key="baseForegroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="btnLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kCQ-0E-tvm"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FVn-rV-7F4">
+                                                <rect key="frame" x="0.0" y="283" width="374" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="25" id="BEw-Oa-F5J"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Forgot your password?">
+                                                    <fontDescription key="titleFontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="14"/>
+                                                    <color key="baseForegroundColor" red="0.48627450980392156" green="0.49019607843137253" blue="0.49411764705882355" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="btnForgotPassword:" destination="BYZ-38-t0r" eventType="touchUpInside" id="riT-hW-V29"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="zrv-Zy-BBY" firstAttribute="height" secondItem="e4N-q0-t01" secondAttribute="height" id="uWA-GR-qJu"/>
+                                        </constraints>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9tl-wI-ryg">
+                                        <rect key="frame" x="20" y="566" width="374" height="227"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9PQ-9P-g7e">
+                                        <rect key="frame" x="20" y="793" width="374" height="25"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PD4-MI-H3x">
+                                                <rect key="frame" x="0.0" y="0.0" width="74.5" height="25"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an Account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vm0-4r-XXH">
+                                                <rect key="frame" x="74.5" y="0.0" width="151" height="25"/>
+                                                <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="14"/>
+                                                <color key="textColor" red="0.48627450980392156" green="0.49019607843137253" blue="0.49411764705882355" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MF1-Mw-Dx8">
+                                                <rect key="frame" x="225.5" y="0.0" width="74.5" height="25"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Sign Up">
+                                                    <fontDescription key="titleFontDescription" name="Metropolis-Bold" family="Metropolis" pointSize="14"/>
+                                                    <color key="baseForegroundColor" name="PrimaryColor"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="btnSignUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xcS-3i-dji"/>
+                                                </connections>
+                                            </button>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Zj-ut-Fs7">
+                                                <rect key="frame" x="300" y="0.0" width="74" height="25"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="Y0o-2J-5Wr"/>
+                                            <constraint firstItem="5Zj-ut-Fs7" firstAttribute="width" secondItem="PD4-MI-H3x" secondAttribute="width" id="cMr-Kj-O31"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="9tl-wI-ryg" firstAttribute="height" secondItem="ZZM-qn-XxL" secondAttribute="height" multiplier="2" id="NfY-Qe-vh8"/>
+                                </constraints>
+                                <directionalEdgeInsets key="directionalLayoutMargins" top="0.0" leading="20" bottom="0.0" trailing="20"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="U8G-lt-JLe" secondAttribute="bottom" id="VGd-q3-8MF"/>
+                            <constraint firstItem="Nn6-he-twp" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="69/812" id="YpG-ly-Vx0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="U8G-lt-JLe" secondAttribute="trailing" id="e2h-qh-zgl"/>
+                            <constraint firstItem="U8G-lt-JLe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kgb-Yd-Yjw"/>
+                            <constraint firstItem="U8G-lt-JLe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="yvC-8D-EAR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="XS9-jh-Um2"/>
+                    <connections>
+                        <outlet property="txtEmail" destination="fln-YM-FHu" id="6wd-Tx-oTr"/>
+                        <outlet property="txtPassword" destination="UoI-Yw-520" id="LVM-Sk-r3q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="944.92753623188412" y="78.348214285714278"/>
+        </scene>
+        <!--Main Navigation Controller-->
+        <scene sceneID="wsn-8m-SAS">
+            <objects>
+                <navigationController storyboardIdentifier="MainNavigationController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="TRO-CE-5wg" customClass="MainNavigationController" customModule="Jana" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0x2-nG-I8l">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sdq-nl-tFn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="78.348214285714278"/>
+        </scene>
+        <!--Sign Up View Controller-->
+        <scene sceneID="Pkb-kb-yc0">
+            <objects>
+                <viewController storyboardIdentifier="SignUpViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Jxo-nG-bAT" customClass="SignUpViewController" customModule="Jana" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XCI-2W-PM4" customClass="IQPreviousNextView" customModule="IQKeyboardManagerSwift">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="aqA-9M-QJy">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Akn-ag-XCQ">
+                                        <rect key="frame" x="20" y="0.0" width="374" height="76"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="ULw-1k-YgH">
+                                        <rect key="frame" x="20" y="76" width="374" height="68.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HCt-YH-Kjy">
+                                                <rect key="frame" x="133" y="0.0" width="108" height="35"/>
+                                                <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="30"/>
+                                                <color key="textColor" red="0.2901960784" green="0.29411764709999999" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add your details to sign up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KA9-3F-qxc">
+                                                <rect key="frame" x="103" y="52" width="168.5" height="16.5"/>
+                                                <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="14"/>
+                                                <color key="textColor" red="0.48627450979999998" green="0.49019607840000001" blue="0.4941176471" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hZU-vd-g13">
+                                        <rect key="frame" x="20" y="144.5" width="374" height="108.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="JpH-5c-zro">
+                                        <rect key="frame" x="20" y="253" width="374" height="324"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="J6T-DF-Ed6">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="198"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eyo-Vd-Lmp">
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="56"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lno-o4-Oby">
+                                                                <rect key="frame" x="20" y="5" width="334" height="46"/>
+                                                                <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                                                                        <color key="value" red="0.71372549019607845" green="0.71764705882352942" blue="0.71764705882352942" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </textField>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstItem="lno-o4-Oby" firstAttribute="top" secondItem="eyo-Vd-Lmp" secondAttribute="top" constant="5" id="302-XD-uzK"/>
+                                                            <constraint firstAttribute="bottom" secondItem="lno-o4-Oby" secondAttribute="bottom" constant="5" id="3sC-as-2Jz"/>
+                                                            <constraint firstItem="lno-o4-Oby" firstAttribute="leading" secondItem="eyo-Vd-Lmp" secondAttribute="leading" constant="20" id="8qY-6w-o75"/>
+                                                            <constraint firstAttribute="height" constant="56" id="Lq7-Bm-pNa"/>
+                                                            <constraint firstAttribute="trailing" secondItem="lno-o4-Oby" secondAttribute="trailing" constant="20" id="zcd-HB-sxO"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="15"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nPb-Nm-3p0">
+                                                        <rect key="frame" x="0.0" y="71" width="374" height="56"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YST-lz-5kk">
+                                                                <rect key="frame" x="20" y="5" width="334" height="46"/>
+                                                                <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                                                                        <color key="value" red="0.71372549019607845" green="0.71764705882352942" blue="0.71764705882352942" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </textField>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="YST-lz-5kk" secondAttribute="bottom" constant="5" id="70X-rL-CTy"/>
+                                                            <constraint firstAttribute="trailing" secondItem="YST-lz-5kk" secondAttribute="trailing" constant="20" id="Rc1-z6-eAo"/>
+                                                            <constraint firstItem="YST-lz-5kk" firstAttribute="leading" secondItem="nPb-Nm-3p0" secondAttribute="leading" constant="20" id="Xw2-Rw-SNl"/>
+                                                            <constraint firstItem="YST-lz-5kk" firstAttribute="top" secondItem="nPb-Nm-3p0" secondAttribute="top" constant="5" id="aBa-C0-V4d"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="15"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gJa-T7-Yey">
+                                                        <rect key="frame" x="0.0" y="142" width="374" height="56"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CV9-vo-gnp">
+                                                                <rect key="frame" x="20" y="5" width="334" height="46"/>
+                                                                <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                                                                        <color key="value" red="0.71372549019607845" green="0.71764705882352942" blue="0.71764705882352942" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </textField>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="CV9-vo-gnp" secondAttribute="bottom" constant="5" id="0Ej-SZ-Gb1"/>
+                                                            <constraint firstItem="CV9-vo-gnp" firstAttribute="leading" secondItem="gJa-T7-Yey" secondAttribute="leading" constant="20" id="35z-ls-moc"/>
+                                                            <constraint firstItem="CV9-vo-gnp" firstAttribute="top" secondItem="gJa-T7-Yey" secondAttribute="top" constant="5" id="DBb-0Q-taY"/>
+                                                            <constraint firstAttribute="trailing" secondItem="CV9-vo-gnp" secondAttribute="trailing" constant="20" id="gDw-4X-0ma"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="15"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RX1-vm-WIf">
+                                                <rect key="frame" x="0.0" y="228" width="374" height="10"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="10" id="SdK-cO-b03"/>
+                                                </constraints>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g8s-Y3-nSf">
+                                                <rect key="frame" x="0.0" y="268" width="374" height="56"/>
+                                                <color key="backgroundColor" name="PrimaryColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Sign Up">
+                                                    <fontDescription key="titleFontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="14"/>
+                                                    <color key="baseForegroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="btnSignUp:" destination="Jxo-nG-bAT" eventType="touchUpInside" id="HnN-Yz-pld"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="g8s-Y3-nSf" firstAttribute="height" secondItem="nPb-Nm-3p0" secondAttribute="height" id="EZ9-qg-f8g"/>
+                                        </constraints>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gYf-hb-Vz5">
+                                        <rect key="frame" x="20" y="577" width="374" height="216"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9LS-9k-Vda">
+                                        <rect key="frame" x="20" y="793" width="374" height="25"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fe3-GN-38a">
+                                                <rect key="frame" x="0.0" y="0.0" width="75.5" height="25"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have an Account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uuP-DT-HuY">
+                                                <rect key="frame" x="75.5" y="0.0" width="164" height="25"/>
+                                                <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="14"/>
+                                                <color key="textColor" red="0.48627450979999998" green="0.49019607840000001" blue="0.4941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bny-h8-lE6">
+                                                <rect key="frame" x="239.5" y="0.0" width="59" height="25"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Login">
+                                                    <fontDescription key="titleFontDescription" name="Metropolis-Bold" family="Metropolis" pointSize="14"/>
+                                                    <color key="baseForegroundColor" name="PrimaryColor"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="btnLogin:" destination="Jxo-nG-bAT" eventType="touchUpInside" id="eMT-fj-fPl"/>
+                                                </connections>
+                                            </button>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pdq-KJ-9Ww">
+                                                <rect key="frame" x="298.5" y="0.0" width="75.5" height="25"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="MgN-d4-xkO"/>
+                                            <constraint firstItem="pdq-KJ-9Ww" firstAttribute="width" secondItem="Fe3-GN-38a" secondAttribute="width" id="Qmi-6a-nat"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="gYf-hb-Vz5" firstAttribute="height" secondItem="hZU-vd-g13" secondAttribute="height" multiplier="2" id="zsl-00-C2a"/>
+                                </constraints>
+                                <directionalEdgeInsets key="directionalLayoutMargins" top="0.0" leading="20" bottom="0.0" trailing="20"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8Cr-OH-L3g"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aqA-9M-QJy" firstAttribute="top" secondItem="8Cr-OH-L3g" secondAttribute="top" id="3hm-mi-cOM"/>
+                            <constraint firstItem="8Cr-OH-L3g" firstAttribute="trailing" secondItem="aqA-9M-QJy" secondAttribute="trailing" id="5Am-yr-m7c"/>
+                            <constraint firstItem="aqA-9M-QJy" firstAttribute="leading" secondItem="8Cr-OH-L3g" secondAttribute="leading" id="Rpn-fK-N5y"/>
+                            <constraint firstItem="Akn-ag-XCQ" firstAttribute="height" secondItem="XCI-2W-PM4" secondAttribute="height" multiplier="69/812" id="jP9-mH-0mU"/>
+                            <constraint firstItem="8Cr-OH-L3g" firstAttribute="bottom" secondItem="aqA-9M-QJy" secondAttribute="bottom" id="txv-uU-wue"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="uI5-vC-H6L"/>
+                    <connections>
+                        <outlet property="txtEmail" destination="YST-lz-5kk" id="hVk-yO-yns"/>
+                        <outlet property="txtPassword" destination="CV9-vo-gnp" id="3LM-hh-NWr"/>
+                        <outlet property="txtUserName" destination="lno-o4-Oby" id="AWw-6o-WxO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rRg-6m-Cvv" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1832" y="78"/>
+        </scene>
+        <!--Forgot Password View Controller-->
+        <scene sceneID="AQD-BH-EuO">
+            <objects>
+                <viewController storyboardIdentifier="ForgotPasswordViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9Pd-JI-30T" customClass="ForgotPasswordViewController" customModule="Jana" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8i1-v4-t0J">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="NQz-eV-KIN">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rwc-Zo-0wl">
+                                        <rect key="frame" x="20" y="0.0" width="374" height="76"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8Zi-S4-6gE">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="76"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bLI-lI-rXv">
+                                                        <rect key="frame" x="0.0" y="20.5" width="35" height="35"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.left" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ymb-Ec-QPR">
+                                                                <rect key="frame" x="5" y="7" width="25" height="21.5"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="imageColor">
+                                                                        <color key="value" name="PrimaryColor"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </imageView>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j5A-oZ-DC0">
+                                                                <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="Back">
+                                                                    <color key="baseForegroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="btnBack:" destination="9Pd-JI-30T" eventType="touchUpInside" id="3mt-yt-eVE"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstItem="ymb-Ec-QPR" firstAttribute="top" secondItem="bLI-lI-rXv" secondAttribute="top" constant="5" id="8Mh-bX-6yn"/>
+                                                            <constraint firstAttribute="trailing" secondItem="j5A-oZ-DC0" secondAttribute="trailing" id="9KI-Wq-zDc"/>
+                                                            <constraint firstItem="j5A-oZ-DC0" firstAttribute="leading" secondItem="bLI-lI-rXv" secondAttribute="leading" id="AAO-nM-bZ7"/>
+                                                            <constraint firstItem="j5A-oZ-DC0" firstAttribute="top" secondItem="bLI-lI-rXv" secondAttribute="top" id="COh-Ha-mLk"/>
+                                                            <constraint firstAttribute="trailing" secondItem="ymb-Ec-QPR" secondAttribute="trailing" constant="5" id="RJz-tS-YRR"/>
+                                                            <constraint firstAttribute="bottom" secondItem="j5A-oZ-DC0" secondAttribute="bottom" id="UGh-tC-YS5"/>
+                                                            <constraint firstAttribute="bottom" secondItem="ymb-Ec-QPR" secondAttribute="bottom" constant="5" id="bJW-mq-olt"/>
+                                                            <constraint firstAttribute="width" constant="35" id="d7O-DE-c8Q"/>
+                                                            <constraint firstItem="ymb-Ec-QPR" firstAttribute="leading" secondItem="bLI-lI-rXv" secondAttribute="leading" constant="5" id="dLh-Wy-naH"/>
+                                                            <constraint firstAttribute="height" constant="35" id="uMf-d9-cIJ"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yGj-g6-7ZH">
+                                                        <rect key="frame" x="35" y="0.0" width="339" height="76"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="8Zi-S4-6gE" secondAttribute="trailing" id="Fc0-Ta-ZA1"/>
+                                            <constraint firstItem="8Zi-S4-6gE" firstAttribute="top" secondItem="rwc-Zo-0wl" secondAttribute="top" id="Olm-Oy-S9s"/>
+                                            <constraint firstItem="8Zi-S4-6gE" firstAttribute="leading" secondItem="rwc-Zo-0wl" secondAttribute="leading" id="dJg-i8-oB5"/>
+                                            <constraint firstAttribute="bottom" secondItem="8Zi-S4-6gE" secondAttribute="bottom" id="qtA-RZ-X1W"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ym6-Q9-cHe">
+                                        <rect key="frame" x="20" y="76" width="374" height="85"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reset Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3z2-hX-MAq">
+                                                <rect key="frame" x="78" y="0.0" width="218.5" height="35"/>
+                                                <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="30"/>
+                                                <color key="textColor" red="0.2901960784" green="0.29411764709999999" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CLo-pq-GqZ">
+                                                <rect key="frame" x="62.5" y="52" width="249.5" height="33"/>
+                                                <string key="text">Please enter your email to receive a 
+link to  create a new password via email</string>
+                                                <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="14"/>
+                                                <color key="textColor" red="0.48627450979999998" green="0.49019607840000001" blue="0.4941176471" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ft4-Rk-crs">
+                                        <rect key="frame" x="20" y="161" width="374" height="172"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="kJz-HD-uPK">
+                                        <rect key="frame" x="20" y="333" width="374" height="142"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="xSR-jU-3JD">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="56"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cWp-QS-PQd">
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="56"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nav-Zh-5eB">
+                                                                <rect key="frame" x="20" y="5" width="334" height="46"/>
+                                                                <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                                                                        <color key="value" red="0.71372549019607845" green="0.71764705882352942" blue="0.71764705882352942" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </textField>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstItem="nav-Zh-5eB" firstAttribute="leading" secondItem="cWp-QS-PQd" secondAttribute="leading" constant="20" id="2Cd-Q4-6PZ"/>
+                                                            <constraint firstAttribute="trailing" secondItem="nav-Zh-5eB" secondAttribute="trailing" constant="20" id="MNw-ca-t53"/>
+                                                            <constraint firstItem="nav-Zh-5eB" firstAttribute="top" secondItem="cWp-QS-PQd" secondAttribute="top" constant="5" id="ddH-Hy-inG"/>
+                                                            <constraint firstAttribute="bottom" secondItem="nav-Zh-5eB" secondAttribute="bottom" constant="5" id="q6f-lU-OEQ"/>
+                                                            <constraint firstAttribute="height" constant="56" id="vWa-A7-thS"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="15"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wQ1-mJ-aKt">
+                                                <rect key="frame" x="0.0" y="86" width="374" height="56"/>
+                                                <color key="backgroundColor" name="PrimaryColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Send">
+                                                    <fontDescription key="titleFontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="14"/>
+                                                    <color key="baseForegroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="btnSend:" destination="9Pd-JI-30T" eventType="touchUpInside" id="2jo-eg-cIG"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="wQ1-mJ-aKt" firstAttribute="height" secondItem="cWp-QS-PQd" secondAttribute="height" id="zDD-Pi-YCd"/>
+                                        </constraints>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OdI-iK-phT">
+                                        <rect key="frame" x="20" y="475" width="374" height="343"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="OdI-iK-phT" firstAttribute="height" secondItem="ft4-Rk-crs" secondAttribute="height" multiplier="2" id="WEt-b0-pwt"/>
+                                </constraints>
+                                <directionalEdgeInsets key="directionalLayoutMargins" top="0.0" leading="20" bottom="0.0" trailing="20"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="d3S-1b-xBb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="d3S-1b-xBb" firstAttribute="bottom" secondItem="NQz-eV-KIN" secondAttribute="bottom" id="Crd-eC-jr8"/>
+                            <constraint firstItem="d3S-1b-xBb" firstAttribute="trailing" secondItem="NQz-eV-KIN" secondAttribute="trailing" id="T1e-gg-xK2"/>
+                            <constraint firstItem="NQz-eV-KIN" firstAttribute="leading" secondItem="d3S-1b-xBb" secondAttribute="leading" id="Xgw-GD-rGV"/>
+                            <constraint firstItem="NQz-eV-KIN" firstAttribute="top" secondItem="d3S-1b-xBb" secondAttribute="top" id="bHh-c1-BXi"/>
+                            <constraint firstItem="rwc-Zo-0wl" firstAttribute="height" secondItem="8i1-v4-t0J" secondAttribute="height" multiplier="69/812" id="zAj-we-kB8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="8Uq-Tn-d5m"/>
+                    <connections>
+                        <outlet property="txtEmail" destination="nav-Zh-5eB" id="EiQ-xg-WiC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LiN-NB-KgQ" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2732" y="78"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chevron.left" catalog="system" width="96" height="128"/>
+        <namedColor name="PrimaryColor">
+            <color red="0.27843137254901962" green="0.59215686274509804" blue="0.69411764705882351" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
