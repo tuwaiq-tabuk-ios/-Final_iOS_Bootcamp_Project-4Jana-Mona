@@ -20,14 +20,13 @@ extension MainNavigationController {
     
     var vcName = "SignInViewController"
     
-//    if let _ =  UserProfile.shared.currentUser {
-//      vcName = "MainTabbar"
-//    }
+    if let _ =  UserProfile.shared.currentUser {
+      vcName = "MainTabbar"
+    }
     
-    
-    // ????
     let vc = UIStoryboard.mainStoryboard.instantiateViewController(withIdentifier: vcName)
     AppDelegate.shared.rootNavigationViewController.setViewControllers([vc], animated: true)
+    
   }
   
 }
