@@ -147,6 +147,42 @@ class FirebaseManager {
   }
   
   
+  func addMessage(uidUser: String, message: String) {
+      
+      let uid = self.DB_REF.childByAutoId().key ?? ""
+      let dic: [String: Any] = ["uid": uid,
+                                "uid-user": uidUser,
+                                "message": message,
+                                "is-read": false,
+                                "uid-sender": Auth.auth().currentUser?.uid ?? "",
+                                "created-date": Date().toString(customFormat: "E, d MMM yyyy HH:mm:ss Z"),
+                              ]
+      self.DB_REF.child("Messages").child(uid).setValue(dic)
+
+  }
+
+  func getMessages(completion: @escaping (_ data: [MessageModel]) -> Void) {
+      
+      self.DB_REF.child("Messages").observe(.value) { (snapshot) in
+          if let value = snapshot.value as? [String : AnyObject] {
+              var data: [MessageModel] = []
+              do {
+                  for (_, value) in value {
+                      let model = try FirebaseDecoder().decode(MessageModel.self, from: value)
+                      data.append(model)
+                  }
+              } catch let error {
+                  print(error)
+              }
+              
+              let tempData = data.sorted(by: { $0.createdDate.toDate(customFormat: "E, d MMM yyyy HH:mm:ss Z").compare($1.createdDate.toDate(customFormat: "E, d MMM yyyy HH:mm:ss Z")) == .orderedAscending })
+              completion(tempData)
+          }
+      }
+      
+  }
+  
+  
   class func showLoader(isShowLoader: Bool) {
     if isShowLoader {
       SVProgressHUD.setDefaultMaskType(.custom)
