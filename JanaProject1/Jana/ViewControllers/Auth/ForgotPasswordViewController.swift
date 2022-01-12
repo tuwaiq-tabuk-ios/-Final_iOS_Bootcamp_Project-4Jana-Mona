@@ -11,9 +11,17 @@ class ForgotPasswordViewController: UIViewController {
     
     @IBOutlet weak var txtEmail: UITextField!
     
+  
+  @IBOutlet weak var ResetPassword: UILabel!
+  @IBOutlet weak var EnterEmail: UILabel!
+  
+  @IBOutlet weak var btnSend: UIButton!
+  
+  
+  
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+      localization ()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -41,6 +49,17 @@ class ForgotPasswordViewController: UIViewController {
     }
     
 }
+
+extension ForgotPasswordViewController {
+  
+  func localization () {
+    ResetPassword.text = NSLocalizedString("ResetPassword", comment: "")
+    EnterEmail.text = NSLocalizedString("Please enter your email to receive a  link to  create a new password via email", comment: "")
+    btnSend.setTitle (NSLocalizedString("Send", comment: ""),for:.normal)
+   
+  }
+}
+
 
 
 extension ForgotPasswordViewController {

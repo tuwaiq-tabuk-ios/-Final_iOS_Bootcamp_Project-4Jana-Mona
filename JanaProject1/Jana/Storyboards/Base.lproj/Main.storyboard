@@ -99,7 +99,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rw3-nd-awT">
                                                         <rect key="frame" x="0.0" y="71" width="374" height="56"/>
                                                         <subviews>
-                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UoI-Yw-520">
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UoI-Yw-520">
                                                                 <rect key="frame" x="20" y="5" width="334" height="46"/>
                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <color key="textColor" name="FontColor"/>
@@ -232,6 +232,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="XS9-jh-Um2"/>
                     <connections>
+                        <outlet property="AnAccount" destination="vm0-4r-XXH" id="9Da-zt-u9s"/>
+                        <outlet property="addYourDetailsToIogIn" destination="4lH-Hh-rhk" id="dLX-78-EHN"/>
+                        <outlet property="btnForgotPassword" destination="FVn-rV-7F4" id="gAI-wi-ADw"/>
+                        <outlet property="btnLogin" destination="zrv-Zy-BBY" id="GIk-Fs-GaR"/>
+                        <outlet property="btnSignUp" destination="MF1-Mw-Dx8" id="IRp-rg-PLT"/>
+                        <outlet property="login" destination="2G2-Nn-eJe" id="z9W-5D-qjR"/>
                         <outlet property="txtEmail" destination="fln-YM-FHu" id="6wd-Tx-oTr"/>
                         <outlet property="txtPassword" destination="UoI-Yw-520" id="LVM-Sk-r3q"/>
                     </connections>
@@ -377,6 +383,9 @@
                     <connections>
                         <outlet property="coInsideHome" destination="9ZD-RW-Ij6" id="FUw-KZ-SSs"/>
                         <outlet property="coOutsideHome" destination="ERN-Z3-T6b" id="5lz-LZ-uob"/>
+                        <outlet property="lblhome" destination="fpC-Tt-V6d" id="nxf-0e-wdm"/>
+                        <outlet property="lblinsideHome" destination="RR5-hA-rL8" id="cE9-w7-kFx"/>
+                        <outlet property="lbloutsideHome" destination="tXs-Tn-cKm" id="DJE-dD-qQQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x1L-Sf-X0f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -606,13 +615,22 @@
                     </view>
                     <navigationItem key="navigationItem" id="uI5-vC-H6L"/>
                     <connections>
+                        <outlet property="SignUp" destination="HCt-YH-Kjy" id="7ly-Mh-Uc6"/>
+                        <outlet property="addYourDetailsToIogIn" destination="KA9-3F-qxc" id="XMh-4Q-gN1"/>
+                        <outlet property="btnLogin" destination="bny-h8-lE6" id="pKE-HG-U8k"/>
+                        <outlet property="btnSignUp" destination="g8s-Y3-nSf" id="pnq-CO-M2T"/>
+                        <outlet property="haveAnAccount" destination="uuP-DT-HuY" id="5QC-VN-Iv6"/>
                         <outlet property="txtEmail" destination="YST-lz-5kk" id="hVk-yO-yns"/>
                         <outlet property="txtPassword" destination="CV9-vo-gnp" id="3LM-hh-NWr"/>
                         <outlet property="txtUserName" destination="lno-o4-Oby" id="AWw-6o-WxO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rRg-6m-Cvv" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="uAX-e4-Y0z"/>
+                <tapGestureRecognizer id="uAX-e4-Y0z">
+                    <connections>
+                        <action selector="dismissKeyboard:" destination="Jxo-nG-bAT" id="LGW-Ep-RP6"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1832" y="78"/>
         </scene>
@@ -670,7 +688,7 @@
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yGj-g6-7ZH">
-                                                        <rect key="frame" x="35" y="0.0" width="339" height="76"/>
+                                                        <rect key="frame" x="35" y="12.5" width="339" height="51"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     </view>
                                                 </subviews>
@@ -693,7 +711,7 @@
                                                 <color key="textColor" red="0.2901960784" green="0.29411764709999999" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CLo-pq-GqZ">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CLo-pq-GqZ" userLabel="Please enter your email to receive a  link to  create a new password via email">
                                                 <rect key="frame" x="62.5" y="52" width="249.5" height="33"/>
                                                 <string key="text">Please enter your email to receive a 
 link to  create a new password via email</string>
@@ -780,6 +798,7 @@ link to  create a new password via email</string>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="d3S-1b-xBb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="d3S-1b-xBb" firstAttribute="bottom" secondItem="NQz-eV-KIN" secondAttribute="bottom" id="Crd-eC-jr8"/>
                             <constraint firstItem="d3S-1b-xBb" firstAttribute="trailing" secondItem="NQz-eV-KIN" secondAttribute="trailing" id="T1e-gg-xK2"/>
@@ -787,13 +806,24 @@ link to  create a new password via email</string>
                             <constraint firstItem="NQz-eV-KIN" firstAttribute="top" secondItem="d3S-1b-xBb" secondAttribute="top" id="bHh-c1-BXi"/>
                             <constraint firstItem="rwc-Zo-0wl" firstAttribute="height" secondItem="8i1-v4-t0J" secondAttribute="height" multiplier="69/812" id="zAj-we-kB8"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="4JK-JN-zvE" appends="YES" id="uMr-uj-LXO"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="8Uq-Tn-d5m"/>
                     <connections>
+                        <outlet property="EnterEmail" destination="CLo-pq-GqZ" id="Qvs-jc-IFg"/>
+                        <outlet property="ResetPassword" destination="3z2-hX-MAq" id="wwr-lb-oUV"/>
+                        <outlet property="btnSend" destination="wQ1-mJ-aKt" id="dBJ-4k-ZQB"/>
                         <outlet property="txtEmail" destination="nav-Zh-5eB" id="EiQ-xg-WiC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LiN-NB-KgQ" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="4JK-JN-zvE">
+                    <connections>
+                        <action selector="dismissKeyboard:" destination="9Pd-JI-30T" id="hFm-9r-4jx"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2732" y="78"/>
         </scene>
@@ -851,7 +881,7 @@ link to  create a new password via email</string>
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8LW-5C-qqx">
-                                                        <rect key="frame" x="35" y="0.0" width="339" height="76"/>
+                                                        <rect key="frame" x="35" y="12.5" width="339" height="51"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     </view>
                                                 </subviews>
@@ -1350,6 +1380,7 @@ link to  create a new password via email</string>
                     <tabBarItem key="tabBarItem" title="Chat" image="message" catalog="system" id="i6f-7O-cjf"/>
                     <navigationItem key="navigationItem" id="GRb-BV-NjY"/>
                     <connections>
+                        <outlet property="lblchat" destination="bSl-pb-e6W" id="29C-bA-r9a"/>
                         <outlet property="tableView" destination="npt-iU-fFi" id="Ute-eU-ilo"/>
                     </connections>
                 </viewController>
@@ -1615,6 +1646,7 @@ link to  create a new password via email</string>
                     <tabBarItem key="tabBarItem" title="Profile" image="person" catalog="system" id="UnD-cK-eP8"/>
                     <navigationItem key="navigationItem" id="7bK-Gt-rl9"/>
                     <connections>
+                        <outlet property="lblProfile" destination="2Bb-P4-U5v" id="9ND-an-NAr"/>
                         <outlet property="tableView" destination="Bwz-Ks-f5o" id="3qb-Kw-baL"/>
                     </connections>
                 </viewController>
@@ -1689,6 +1721,7 @@ link to  create a new password via email</string>
                     <tabBarItem key="tabBarItem" title="Articles" image="square.grid.2x2" catalog="system" id="mnr-Cs-Gaq"/>
                     <navigationItem key="navigationItem" id="pp5-ZM-365"/>
                     <connections>
+                        <outlet property="lblArticles" destination="6MA-0i-H0w" id="Z6k-ld-fCA"/>
                         <outlet property="tableView" destination="2uF-2H-hwB" id="7EO-WH-E3m"/>
                     </connections>
                 </viewController>
@@ -1986,6 +2019,7 @@ link to  create a new password via email</string>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="lblChildren" destination="5Bd-ZC-NHA" id="J7b-VH-h03"/>
                         <outlet property="tableView" destination="0Kk-03-ySs" id="J57-NE-GHV"/>
                     </connections>
                 </viewController>
@@ -2006,13 +2040,13 @@ link to  create a new password via email</string>
         <image name="plus" catalog="system" width="128" height="113"/>
         <image name="square.grid.2x2" catalog="system" width="128" height="114"/>
         <namedColor name="BGColor">
-            <color red="0.96102148294448853" green="0.94954194488782551" blue="0.83571262991529527" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.96100002527236938" green="0.94999998807907104" blue="0.83600002527236938" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="FontColor">
             <color red="0.2630000114440918" green="0.26199999451637268" blue="0.26499998569488525" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="PrimaryColor">
-            <color red="0.49996122573420465" green="0.68281418085098267" blue="0.63416835129636973" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.49803921568627452" green="0.68235294117647061" blue="0.63137254901960782" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

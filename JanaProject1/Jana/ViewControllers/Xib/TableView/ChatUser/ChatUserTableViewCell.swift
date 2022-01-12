@@ -20,6 +20,7 @@ class ChatUserTableViewCell: UITableViewCell {
   
   var object: UserModel?
   
+  
   func configureCell() {
     if let obj = object {
       self.lblUserName.text = obj.userName

@@ -15,9 +15,17 @@ class SignUpViewController: UIViewController {
     
     @IBOutlet weak var txtPassword: UITextField!
     
-    override func viewDidLoad() {
+  @IBOutlet weak var btnSignUp: UIButton!
+  @IBOutlet weak var btnLogin: UIButton!
+  
+  @IBOutlet weak var addYourDetailsToIogIn: UILabel!
+  @IBOutlet weak var SignUp: UILabel!
+  
+  @IBOutlet weak var haveAnAccount: UILabel!
+  
+  override func viewDidLoad() {
         super.viewDidLoad()
-        
+      localization ()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -47,6 +55,21 @@ class SignUpViewController: UIViewController {
     
 }
 
+extension SignUpViewController {
+  
+  func localization () {
+    SignUp.text = NSLocalizedString("Sign Up", comment: "")
+    haveAnAccount.text = NSLocalizedString("Have An Account", comment: "")
+    
+    addYourDetailsToIogIn.text = NSLocalizedString("Add your details to login", comment: "")
+    
+    btnLogin.setTitle (NSLocalizedString("Login", comment: ""),for:.normal)
+    btnSignUp.setTitle (NSLocalizedString("Sign Up", comment: ""),for:.normal)
+    
+
+  }
+
+}
 
 
 extension SignUpViewController {

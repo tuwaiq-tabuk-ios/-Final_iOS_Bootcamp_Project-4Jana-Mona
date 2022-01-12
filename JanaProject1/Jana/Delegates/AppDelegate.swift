@@ -9,14 +9,16 @@ import UIKit
 import IQKeyboardManagerSwift
 import Firebase
 
+
 extension UIStoryboard {
     static let mainStoryboard = UIStoryboard.init(name: "Main", bundle: nil)
 }
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+//
     static var shared: AppDelegate {
+      // to get you a reference to the application's delegate
         return UIApplication.shared.delegate as! AppDelegate
     }
     
@@ -24,6 +26,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var rootNavigationViewController: UINavigationController!
     
+  //
+  
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         IQKeyboardManager.shared.enable = true

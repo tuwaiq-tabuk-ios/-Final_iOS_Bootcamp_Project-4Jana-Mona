@@ -8,78 +8,85 @@
 import UIKit
 
 class AddChildViewController: UIViewController {
+  
+  @IBOutlet weak var imgUser: UIImageView!
+  
+  @IBOutlet weak var txtName: UITextField!
+  
+  @IBOutlet weak var txtDateOfBirth: UITextField!
+  
+  @IBOutlet weak var txtRelationship: UITextView!
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+  }
+  
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+  }
+  
+  @IBAction func btnBack(_ sender: Any) {
+    self.navigationController?.popViewController(animated: true)
+  }
+  
+  @IBAction func btnUploadImage(_ sender: Any) {
     
-    @IBOutlet weak var imgUser: UIImageView!
+    let picker = ImagePicker.shared.picker
     
-    @IBOutlet weak var txtName: UITextField!
+    picker.didFinishPicking { [unowned picker] items, _ in
+      if let photo = items.singlePhoto {
+        self.imgUser.image = photo.image
+      }
+      picker.dismiss(animated: true, completion: nil)
+    }
+    present(picker, animated: true, completion: nil)
     
-    @IBOutlet weak var txtDateOfBirth: UITextField!
+  }
+  
+  @IBAction func btnSave(_ sender: Any) {
     
-    @IBOutlet weak var txtRelationship: UITextView!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    guard self.validation() else {
+      return
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-    }
+    FirebaseManager.shared.addChild(image: self.imgUser.image,
+                                    name: self.txtName.text ?? "",
+                                    dateOfBirth: self.txtDateOfBirth.text ?? "",
+                                    relationship: self.txtRelationship.text ?? "")
     
-    @IBAction func btnBack(_ sender: Any) {
-        self.navigationController?.popViewController(animated: true)
-    }
-    
-    @IBAction func btnUploadImage(_ sender: Any) {
-        
-        let picker = ImagePicker.shared.picker
-        
-        picker.didFinishPicking { [unowned picker] items, _ in
-            if let photo = items.singlePhoto {
-                self.imgUser.image = photo.image
-            }
-            picker.dismiss(animated: true, completion: nil)
-        }
-        present(picker, animated: true, completion: nil)
-        
-    }
-    
-    @IBAction func btnSave(_ sender: Any) {
-        
-        guard self.validation() else {
-            return
-        }
-        
-        FirebaseManager.shared.addChild(image: self.imgUser.image, name: self.txtName.text ?? "", dateOfBirth: self.txtDateOfBirth.text ?? "", relationship: self.txtRelationship.text ?? "")
-        
-    }
-    
+  }
+  
 }
 
 extension AddChildViewController {
+  
+  func validation() -> Bool {
     
-    func validation() -> Bool {
-        
-        guard let _ = self.imgUser.image else {
-            self.showSnackbarMessage(message: "Please enter image child", isError: true)
-            return false
-        }
-        
-        guard let name = txtName.text, name.trimmingCharacters(in: .whitespaces) != "" else {
-            self.showSnackbarMessage(message: "Please enter name", isError: true)
-            return false
-        }
-        
-        guard let dateOfBirth = txtDateOfBirth.text, dateOfBirth.trimmingCharacters(in: .whitespaces) != "" else {
-            self.showSnackbarMessage(message: "Please enter date of birth", isError: true)
-            return false
-        }
-        
-        guard let relationship = txtRelationship.text, relationship.trimmingCharacters(in: .whitespaces) != "" else {
-            self.showSnackbarMessage(message: "Please enter relationship", isError: true)
-            return false
-        }
-        
-        return true
+    guard let _ = self.imgUser.image else {
+      self.showSnackbarMessage(message: "Please enter image child",
+                               isError: true)
+      return false
     }
     
+    guard let name = txtName.text, name.trimmingCharacters(in: .whitespaces) != "" else {
+      self.showSnackbarMessage(message: "Please enter name",
+                               isError: true)
+      return false
+    }
+    
+    guard let dateOfBirth = txtDateOfBirth.text, dateOfBirth.trimmingCharacters(in: .whitespaces) != "" else {
+      self.showSnackbarMessage(message: "Please enter date of birth",
+                               isError: true)
+      return false
+    }
+    
+    guard let relationship = txtRelationship.text, relationship.trimmingCharacters(in: .whitespaces) != "" else {
+      self.showSnackbarMessage(message: "Please enter relationship",
+                               isError: true)
+      return false
+    }
+    
+    return true
+  }
+  
 }

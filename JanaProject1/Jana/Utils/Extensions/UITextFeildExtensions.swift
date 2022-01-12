@@ -7,17 +7,18 @@ import Foundation
 import UIKit
 
 extension UITextField {
-    @IBInspectable var placeHolderColor: UIColor {
-        set {
-            self.attributedPlaceholder = NSAttributedString.init(string: self.placeholder ?? "", attributes: [NSAttributedString.Key.foregroundColor: newValue])
-        }
-        get {
-            return .white
-        }
+  @IBInspectable var placeHolderColor: UIColor {
+    set {
+      self.attributedPlaceholder = NSAttributedString.init(string: self.placeholder ?? "",
+                                                           attributes: [NSAttributedString.Key.foregroundColor: newValue])
     }
-    
-    var isValidValue: Bool {
-        return self.text?.count != 0 && self.text != nil && !(self.text?.trimmingCharacters(in: .whitespaces).isEmpty ?? false) != false
+    get {
+      return .white
     }
-    
+  }
+  
+  var isValidValue: Bool {
+    return self.text?.count != 0 && self.text != nil && !(self.text?.trimmingCharacters(in: .whitespaces).isEmpty ?? false) != false
+  }
+  
 }

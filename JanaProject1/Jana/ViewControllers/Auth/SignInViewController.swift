@@ -10,25 +10,34 @@ import UIKit
 class SignInViewController: UIViewController {
     
     @IBOutlet weak var txtEmail: UITextField!
-    
     @IBOutlet weak var txtPassword: UITextField!
     
-    override func viewDidLoad() {
+  @IBOutlet weak var login: UILabel!
+  @IBOutlet weak var addYourDetailsToIogIn: UILabel!
+  
+  @IBOutlet weak var btnLogin: UIButton!
+  @IBOutlet weak var btnForgotPassword: UIButton!
+  
+  @IBOutlet weak var AnAccount: UILabel!
+  @IBOutlet weak var btnSignUp: UIButton!
+  
+  
+  override func viewDidLoad() {
         super.viewDidLoad()
-      
-    }
+     localization ()
+    
+  }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.navigationBar.isHidden = true
     }
    
+  
   @IBAction func dismissKeyboard(_ sender: UITapGestureRecognizer) {
       txtEmail.resignFirstResponder()
     txtPassword.resignFirstResponder()
   }
-  
-  
   
   
     @IBAction func btnLogin(_ sender: Any) {
@@ -37,15 +46,18 @@ class SignInViewController: UIViewController {
             return
         }
         
-        FirebaseManager.shared.loginWithEmail(email: self.txtEmail.text ?? "", password: self.txtPassword.text ?? "")
+        FirebaseManager.shared.loginWithEmail(email: self.txtEmail.text ?? "",
+                                              password: self.txtPassword.text ?? "")
         
     }
     
+  
     @IBAction func btnForgotPassword(_ sender: Any) {
         let vc = UIStoryboard.mainStoryboard.instantiateViewController(withIdentifier: "ForgotPasswordViewController")
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
+  
     @IBAction func btnSignUp(_ sender: Any) {
         let vc = UIStoryboard.mainStoryboard.instantiateViewController(withIdentifier: "SignUpViewController")
         self.navigationController?.setViewControllers([vc], animated: true)
@@ -53,6 +65,21 @@ class SignInViewController: UIViewController {
     
 }
 
+extension SignInViewController {
+  
+  func localization () {
+    login.text = NSLocalizedString("Login", comment: "")
+    addYourDetailsToIogIn.text = NSLocalizedString("Add your details to login", comment: "")
+    AnAccount.text = NSLocalizedString("Don't have an Account?", comment: "")
+    
+    btnForgotPassword.setTitle (NSLocalizedString("Forgot your password?", comment: ""),for:.normal)
+    btnLogin.setTitle (NSLocalizedString("Login", comment: ""),for:.normal)
+    btnSignUp.setTitle (NSLocalizedString("Sign Up", comment: ""),for:.normal)
+      
+
+  }
+
+}
 
 
 extension SignInViewController {

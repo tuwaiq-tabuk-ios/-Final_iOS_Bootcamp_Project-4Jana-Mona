@@ -8,6 +8,8 @@
 
 import Foundation
 
+// MARK: - MessageModel
+
 struct MessageModel: Codable {
     let uid, uidUser, message: String
     let isRead: Bool
