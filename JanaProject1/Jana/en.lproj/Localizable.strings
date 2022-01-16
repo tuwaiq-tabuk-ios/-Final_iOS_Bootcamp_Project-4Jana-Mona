@@ -1,0 +1,30 @@
+
+"Login" = "Login";
+"Add your details to login" = "Add your details to login";
+"Forgot your password?" = "Forgot your password?";
+"Don't have an Account?" = "Don't have an Account?" ;
+"Sign Up" = "Sign Up";
+"Email" = "Email";
+"password" = "password";
+"Please enter your email to receive a  link to  create a new password via email" = "Please enter your email to receive a  link to  create a new password via email";
+
+"ResetPassword" = "ResetPassword";
+"Send" = "Send" ;
+"Have An Account" = "Have An Account" ;
+"Home" ="Home";
+"Inside Home" = "Inside Home" ;
+"Outside Home" = "Outside Home";
+"kitchen" = "kitchen";
+"bedrooms" = "bedrooms";
+"bathrooms" = "bathrooms";
+"garden" = "garden";
+"restaurant" = "restaurant";
+"hospital" = "hospital";
+"school" = "school";
+"chat" = "chat";
+"Articles" = "Articles";
+"Profile" = "Profile";
+"userName" = "userName";
+"Detials Articles" = "Detials Articles";
+"Children" = "Children" ;
+"Logout" = "Logout";

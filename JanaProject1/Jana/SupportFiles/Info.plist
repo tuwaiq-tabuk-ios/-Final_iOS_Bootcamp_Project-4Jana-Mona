@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>UIApplicationSceneManifest</key>
+	<dict>
+		<key>UIApplicationSupportsMultipleScenes</key>
+		<false/>
+		<key>UISceneConfigurations</key>
+		<dict>
+			<key>UIWindowSceneSessionRoleApplication</key>
+			<array>
+				<dict>
+					<key>UISceneConfigurationName</key>
+					<string>Default Configuration</string>
+					<key>UISceneDelegateClassName</key>
+					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
+					<key>UISceneStoryboardFile</key>
+					<string>Main</string>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Metropolis-ExtraBoldItalic.otf</string>
+		<string>Metropolis-Black.otf</string>
+		<string>Metropolis-BlackItalic.otf</string>
+		<string>Metropolis-Bold.otf</string>
+		<string>Metropolis-BoldItalic.otf</string>
+		<string>Metropolis-ExtraBold.otf</string>
+		<string>Metropolis-ExtraLight.otf</string>
+		<string>Metropolis-ExtraLightItalic.otf</string>
+		<string>Metropolis-Light.otf</string>
+		<string>Metropolis-LightItalic.otf</string>
+		<string>Metropolis-Medium.otf</string>
+		<string>Metropolis-MediumItalic.otf</string>
+		<string>Metropolis-Regular.otf</string>
+		<string>Metropolis-RegularItalic.otf</string>
+		<string>Metropolis-SemiBold.otf</string>
+		<string>Metropolis-SemiBoldItalic.otf</string>
+		<string>Metropolis-Thin.otf</string>
+		<string>Metropolis-ThinItalic.otf</string>
+	</array>
+	<key>NSCameraUsageDescription</key>
+	<string>رفع صور </string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>رفع </string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>رفع صور </string>
+</dict>
+</plist>

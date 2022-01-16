@@ -1,0 +1,204 @@
+
+/* Class = "UIButton"; configuration.title = "Add"; ObjectID = "0Y6-Mo-Uyy"; */
+"0Y6-Mo-Uyy.configuration.title" = "Add";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "0Y6-Mo-Uyy"; */
+"0Y6-Mo-Uyy.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Profile"; ObjectID = "2Bb-P4-U5v"; */
+"2Bb-P4-U5v.text" = "Profile";
+
+/* Class = "UILabel"; text = "Login"; ObjectID = "2G2-Nn-eJe"; */
+"2G2-Nn-eJe.text" = "Login";
+
+/* Class = "UILabel"; text = "Reset Password"; ObjectID = "3z2-hX-MAq"; */
+"3z2-hX-MAq.text" = "Reset Password";
+
+/* Class = "UILabel"; text = "Add your details to login"; ObjectID = "4lH-Hh-rhk"; */
+"4lH-Hh-rhk.text" = "Add your details to login";
+
+/* Class = "UIButton"; configuration.title = "Upload Image"; ObjectID = "530-vd-OZi"; */
+"530-vd-OZi.configuration.title" = "Upload Image";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "530-vd-OZi"; */
+"530-vd-OZi.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Children"; ObjectID = "5Bd-ZC-NHA"; */
+"5Bd-ZC-NHA.text" = "Children";
+
+/* Class = "UILabel"; text = "Articles"; ObjectID = "6MA-0i-H0w"; */
+"6MA-0i-H0w.text" = "Articles";
+
+/* Class = "UITabBarItem"; title = "Home"; ObjectID = "BGq-Zy-y3y"; */
+"BGq-Zy-y3y.title" = "Home";
+
+/* Class = "UILabel"; text = "Please enter your email to receive a \nlink to  create a new password via email"; ObjectID = "CLo-pq-GqZ"; */
+"CLo-pq-GqZ.text" = "Please enter your email to receive a \nlink to  create a new password via email";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "CV9-vo-gnp"; */
+"CV9-vo-gnp.placeholder" = "Password";
+
+/* Class = "UIButton"; configuration.title = "Forgot your password?"; ObjectID = "FVn-rV-7F4"; */
+"FVn-rV-7F4.configuration.title" = "Forgot your password?";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "FVn-rV-7F4"; */
+"FVn-rV-7F4.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "Enter Message"; ObjectID = "FvR-bD-fh9"; */
+"FvR-bD-fh9.placeholder" = "Enter Message";
+
+/* Class = "UIButton"; configuration.title = "Back"; ObjectID = "GNI-eZ-adX"; */
+"GNI-eZ-adX.configuration.title" = "Back";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "GNI-eZ-adX"; */
+"GNI-eZ-adX.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Sign Up"; ObjectID = "HCt-YH-Kjy"; */
+"HCt-YH-Kjy.text" = "Sign Up";
+
+/* Class = "UILabel"; text = "Add your details to sign up"; ObjectID = "KA9-3F-qxc"; */
+"KA9-3F-qxc.text" = "Add your details to sign up";
+
+/* Class = "UIButton"; configuration.title = "رجوع"; ObjectID = "Kft-fb-Nn3"; */
+"Kft-fb-Nn3.configuration.title" = "رجوع";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Kft-fb-Nn3"; */
+"Kft-fb-Nn3.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Sign Up"; ObjectID = "MF1-Mw-Dx8"; */
+"MF1-Mw-Dx8.configuration.title" = "Sign Up";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "MF1-Mw-Dx8"; */
+"MF1-Mw-Dx8.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Back"; ObjectID = "MIh-Hw-EgY"; */
+"MIh-Hw-EgY.configuration.title" = "Back";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "MIh-Hw-EgY"; */
+"MIh-Hw-EgY.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "أرسل الرسالة"; ObjectID = "Mkt-hJ-Jiy"; */
+"Mkt-hJ-Jiy.configuration.title" = "أرسل الرسالة";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Mkt-hJ-Jiy"; */
+"Mkt-hJ-Jiy.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Article details"; ObjectID = "QcF-Q0-k2Q"; */
+"QcF-Q0-k2Q.text" = "Article details";
+
+/* Class = "UILabel"; text = "Inside the home"; ObjectID = "RR5-hA-rL8"; */
+"RR5-hA-rL8.text" = "Inside the home";
+
+/* Class = "UIButton"; configuration.title = "Save"; ObjectID = "S6m-WA-r2c"; */
+"S6m-WA-r2c.configuration.title" = "Save";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "S6m-WA-r2c"; */
+"S6m-WA-r2c.normalTitle" = "Button";
+
+/* Class = "UITabBarItem"; title = "Profile"; ObjectID = "UnD-cK-eP8"; */
+"UnD-cK-eP8.title" = "Profile";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "UoI-Yw-520"; */
+"UoI-Yw-520.placeholder" = "Password";
+
+/* Class = "UIButton"; configuration.title = "Back"; ObjectID = "W6n-M2-kiD"; */
+"W6n-M2-kiD.configuration.title" = "Back";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "W6n-M2-kiD"; */
+"W6n-M2-kiD.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Xty-di-iM8"; */
+"Xty-di-iM8.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "YST-lz-5kk"; */
+"YST-lz-5kk.placeholder" = "Email";
+
+/* Class = "UIButton"; configuration.title = "Back"; ObjectID = "ZQb-9S-zyF"; */
+"ZQb-9S-zyF.configuration.title" = "Back";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "ZQb-9S-zyF"; */
+"ZQb-9S-zyF.normalTitle" = "Button";
+
+/* Class = "UITextView"; text = "What is the relationship between you and the child?"; ObjectID = "a2g-v1-MGT"; */
+"a2g-v1-MGT.text" = "What is the relationship between you and the child?";
+
+/* Class = "UILabel"; text = "User name"; ObjectID = "aSD-BM-Cl4"; */
+"aSD-BM-Cl4.text" = "User name";
+
+/* Class = "UILabel"; text = "Chat"; ObjectID = "bSl-pb-e6W"; */
+"bSl-pb-e6W.text" = "Chat";
+
+/* Class = "UIButton"; configuration.title = "Login"; ObjectID = "bny-h8-lE6"; */
+"bny-h8-lE6.configuration.title" = "Login";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "bny-h8-lE6"; */
+"bny-h8-lE6.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "Name"; ObjectID = "cIe-JX-jjW"; */
+"cIe-JX-jjW.placeholder" = "Name";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "d23-2y-DgJ"; */
+"d23-2y-DgJ.title" = "Item";
+
+/* Class = "UILabel"; text = "title"; ObjectID = "dui-es-lG8"; */
+"dui-es-lG8.text" = "title";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "fln-YM-FHu"; */
+"fln-YM-FHu.placeholder" = "Email";
+
+/* Class = "UILabel"; text = "Home"; ObjectID = "fpC-Tt-V6d"; */
+"fpC-Tt-V6d.text" = "Home";
+
+/* Class = "UIButton"; configuration.title = "Sign Up"; ObjectID = "g8s-Y3-nSf"; */
+"g8s-Y3-nSf.configuration.title" = "Sign Up";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "g8s-Y3-nSf"; */
+"g8s-Y3-nSf.normalTitle" = "Button";
+
+/* Class = "UITabBarItem"; title = "Chat"; ObjectID = "i6f-7O-cjf"; */
+"i6f-7O-cjf.title" = "Chat";
+
+/* Class = "UIButton"; configuration.title = "Back"; ObjectID = "j5A-oZ-DC0"; */
+"j5A-oZ-DC0.configuration.title" = "Back";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "j5A-oZ-DC0"; */
+"j5A-oZ-DC0.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "Username"; ObjectID = "lno-o4-Oby"; */
+"lno-o4-Oby.placeholder" = "Username";
+
+/* Class = "UITabBarItem"; title = "Articles"; ObjectID = "mnr-Cs-Gaq"; */
+"mnr-Cs-Gaq.title" = "Articles";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "nav-Zh-5eB"; */
+"nav-Zh-5eB.placeholder" = "Email";
+
+/* Class = "UITextField"; placeholder = "Date of birth"; ObjectID = "sBV-m3-n6z"; */
+"sBV-m3-n6z.placeholder" = "Date of birth";
+
+/* Class = "UILabel"; text = "Outside the home"; ObjectID = "tXs-Tn-cKm"; */
+"tXs-Tn-cKm.text" = "Outside the home";
+
+/* Class = "UILabel"; text = "Already have an Account?"; ObjectID = "uuP-DT-HuY"; */
+"uuP-DT-HuY.text" = "Already have an Account?";
+
+/* Class = "UIButton"; configuration.title = "Add"; ObjectID = "v7H-e7-7tk"; */
+"v7H-e7-7tk.configuration.title" = "Add";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "v7H-e7-7tk"; */
+"v7H-e7-7tk.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Don't have an Account?"; ObjectID = "vm0-4r-XXH"; */
+"vm0-4r-XXH.text" = "Don't have an Account?";
+
+/* Class = "UIButton"; configuration.title = "Send"; ObjectID = "wQ1-mJ-aKt"; */
+"wQ1-mJ-aKt.configuration.title" = "Send";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "wQ1-mJ-aKt"; */
+"wQ1-mJ-aKt.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Login"; ObjectID = "zrv-Zy-BBY"; */
+"zrv-Zy-BBY.configuration.title" = "Login";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "zrv-Zy-BBY"; */
+"zrv-Zy-BBY.normalTitle" = "Button";

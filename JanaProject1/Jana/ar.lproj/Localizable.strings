@@ -1,0 +1,31 @@
+
+"Login" = "تسجيل دخول";
+"Add your details to login" = "أضف التفاصيل الخاصة بك لتسجيل الدخول";
+
+"Forgot your password?" = "نسيت الرقم السري؟";
+"Don't have an Account?" = "ليس لدي حساب؟" ;
+"Sign Up" = "انشاء حساب";
+"Email" = "ايميل";
+"password" = "كلمة المرور";
+"Please enter your email to receive a  link to  create a new password via email" = "يرجى إدخال بريدك الإلكتروني لتلقي ارتباط لإنشاء كلمة مرور جديدة عبر البريد الإلكتروني";
+
+"ResetPassword" = "إعادة تعيين كلمة المرور";
+"Send" = "ارسال";
+"Have An Account" = "لديك حساب";
+"Home" = "الصفحة الرئيسية";
+"Inside Home" = "داخل المنزل";
+"Outside Home" = "خارج المنزل";
+"kitchen" = "المطبخ";
+"bedrooms" = "غرف نوم";
+"bathrooms" = "الحمام";
+"garden" = "الحديقة";
+"restaurant" = "المطعم";
+"hospital" = "المستشفى";
+"school" = "المدرسة";
+"chat" = "محادثة";
+"Articles" = "مقالات";
+"Profile"="الملف الشخصي";
+"userName" = "اسم المستخدم";
+"Detials Articles" = "تفاصيل المقال";
+"Children" = "اطفال" ;
+"Logout" = "تسجيل خروج";
