@@ -44,7 +44,9 @@ class SignUpViewController: UIViewController {
             return
         }
         
-        FirebaseManager.shared.createAccount(userName: self.txtUserName.text ?? "", email: self.txtEmail.text ?? "", password: self.txtPassword.text ?? "")
+        FirebaseManager.shared.createAccount(userName: self.txtUserName.text ?? "",
+                                             email: self.txtEmail.text ?? "",
+                                             password: self.txtPassword.text ?? "")
         
     }
     

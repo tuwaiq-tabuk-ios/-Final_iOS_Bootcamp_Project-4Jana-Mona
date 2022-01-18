@@ -25,6 +25,7 @@ class ChildrenTableViewCell: UITableViewCell {
   
   func configureCell() {
     if let obj = object {
+     //??
       self.imgUser.imageURL(url: obj.iamge)
       self.lblChildName.text = obj.name
       self.lblDateOfBirth.text = obj.dateOfBirth
@@ -33,6 +34,7 @@ class ChildrenTableViewCell: UITableViewCell {
   
   
   @IBAction func btnDelete(_ sender: Any) {
+    //??
     FirebaseManager.shared.deleteChild(uidChild: object?.uid ?? "")
   }
   
