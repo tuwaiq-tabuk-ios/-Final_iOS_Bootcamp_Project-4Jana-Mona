@@ -25,7 +25,7 @@ class ChildrenTableViewCell: UITableViewCell {
   
   func configureCell() {
     if let obj = object {
-     //??
+   
       self.imgUser.imageURL(url: obj.iamge)
       self.lblChildName.text = obj.name
       self.lblDateOfBirth.text = obj.dateOfBirth

@@ -23,7 +23,7 @@ class MenuTableViewCell: UITableViewCell {
   func configureCell() {
     if let obj = object {
       self.lblTitle.text = obj.title
-      //???
+  
       self.icArrow.isHidden = obj == .logout
     }
   }

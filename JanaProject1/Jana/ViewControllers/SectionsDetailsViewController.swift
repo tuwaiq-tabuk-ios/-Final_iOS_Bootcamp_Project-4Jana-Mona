@@ -21,7 +21,6 @@ class SectionsDetailsViewController: UIViewController {
     super.viewDidLoad()
     setupView()
     fetchData()
-    localization ()
   }
   
   override func viewWillAppear(_ animated: Bool) {
@@ -40,7 +39,7 @@ class SectionsDetailsViewController: UIViewController {
         FirebaseManager.shared.addTool(image: photo.image,
                                        type: self.object ?? Constants.sections.garden)
       }
-      //??
+     
       picker.dismiss(animated: true,
                      completion: nil)
     }
@@ -60,17 +59,10 @@ extension SectionsDetailsViewController {
   }
   
   
-  func localization () {
-    lblTitle.text = NSLocalizedString(" Articles", comment: "")
-    
-  }
-  
-  
   func fetchData() {
-    //???
+ 
     FirebaseManager.shared.getMyTools { data in
       self.tools.removeAll()
-      //____
       for item in data {
         if self.object?.rawValue == item.type {
           self.tools.append(item)

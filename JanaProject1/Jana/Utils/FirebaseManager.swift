@@ -14,7 +14,7 @@ import CodableFirebase
 import SVProgressHUD
 
 class FirebaseManager {
-  //??
+ 
   static let shared = FirebaseManager()
   
   let DB_REF = Database.database().reference()
@@ -92,7 +92,7 @@ class FirebaseManager {
       FirebaseManager.showLoader(isShowLoader: false)
       if error != nil {
         AppDelegate.shared.rootNavigationViewController.showSnackbarMessage(message:
-                        //???
+                     
                                           error?.localizedDescription ?? "",                            isError: true)
         
       } else {

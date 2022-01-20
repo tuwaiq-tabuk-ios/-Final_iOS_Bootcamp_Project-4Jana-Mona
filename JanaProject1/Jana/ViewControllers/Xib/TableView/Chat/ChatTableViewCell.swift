@@ -44,7 +44,7 @@ class ChatTableViewCell: UITableViewCell {
     if let obj = object {
       self.lblMessage.text = obj.message
       self.lblDate.text = obj.createdDate
-      //???
+   
       self.setUpCell(sender: obj.uidSender == UserProfile.shared.currentUser?.udid ? .me : .he)
     }
   }
