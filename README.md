@@ -42,11 +42,18 @@ Close family, special needs teachers, health care providers that use the app wit
 
 ## below is a video Record for the application screan:
 #1
+
 https://user-images.githubusercontent.com/85816257/150351665-162a44c5-519f-423e-8437-04fbb92700eb.mp4
+
 #2
+
 ![demo 222](https://user-images.githubusercontent.com/85816257/150355604-861709e5-1941-46d7-91f0-054db73260a7.gif)
+
 #3
+
 ![demo 222 2](https://user-images.githubusercontent.com/85816257/150355716-be1954cc-1b75-4911-8d04-8951c0e45602.gif)
+
 #4
+
 ![demo33](https://user-images.githubusercontent.com/85816257/150356070-2d8d6adb-479b-44ea-b45e-41a79edde06f.gif)
 
