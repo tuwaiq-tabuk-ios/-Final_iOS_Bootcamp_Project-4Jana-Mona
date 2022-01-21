@@ -20,6 +20,7 @@ class HomeCellCollectionViewCell: UICollectionViewCell {
   
   func configureCell() {
     if let obj = object {
+     
       self.imgItem.image = obj.image.image_
       
     }

@@ -1,4 +1,6 @@
 # Final_iOS_Bootcamp_Project-4Jana-Mona
+![4Jana](https://user-images.githubusercontent.com/85816257/150338798-7a622e38-69b7-42a3-9a80-0cc73807d8b3.png)
+
 The aim of this app is to facilitate communication through images for non-verbal children with autism or developmental disabilities
 
 ## Motivation
@@ -15,7 +17,7 @@ Each category has several sections
      - Inside the house: bathrooms , bedrooms , Kitchen...
      - outside the house: hospital , restaurant, garden , school...
 
-Each section contains its own pictures with names to help the children to link these image  shapes with the real objects that surround them.
+Each section contains its own pictures can take it from camera or upload it from library.
 
 For instance, in the ""child want spoon"" scenario, he/she chooses ""Inside the house"" category, then ""kitchen"" section, and within that section he/she presses the ""spoon"" image. Then his/her assistant can understand that he/she needs a spoon.
 
@@ -37,3 +39,21 @@ Close family, special needs teachers, health care providers that use the app wit
    - The App supports dark/ light modes.
    - The app support different languages.
    - Users first time have to sign up, and the rest of the times that they start the App, they have to sign in with their login and password.
+
+## below is a video Record for the application screan:
+#1
+
+https://user-images.githubusercontent.com/85816257/150351665-162a44c5-519f-423e-8437-04fbb92700eb.mp4
+
+#2
+
+![demo 222](https://user-images.githubusercontent.com/85816257/150355604-861709e5-1941-46d7-91f0-054db73260a7.gif)
+
+#3
+
+![demo 222 2](https://user-images.githubusercontent.com/85816257/150355716-be1954cc-1b75-4911-8d04-8951c0e45602.gif)
+
+#4
+
+![demo33](https://user-images.githubusercontent.com/85816257/150356070-2d8d6adb-479b-44ea-b45e-41a79edde06f.gif)
+

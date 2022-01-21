@@ -18,7 +18,7 @@ class ArticleDetailsViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     setupView()
-    localization ()
+  
   }
   
   
@@ -42,9 +42,5 @@ extension ArticleDetailsViewController {
   }
   
   
-  func localization () {
-    lblDetials.text = NSLocalizedString(" Detials Articles", comment: "")
-    
-  }
-  
+
 }

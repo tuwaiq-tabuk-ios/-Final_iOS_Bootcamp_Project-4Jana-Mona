@@ -14,7 +14,7 @@ import CodableFirebase
 import SVProgressHUD
 
 class FirebaseManager {
-  
+ 
   static let shared = FirebaseManager()
   
   let DB_REF = Database.database().reference()
@@ -91,7 +91,9 @@ class FirebaseManager {
     Auth.auth().sendPasswordReset(withEmail: email) { error in
       FirebaseManager.showLoader(isShowLoader: false)
       if error != nil {
-        AppDelegate.shared.rootNavigationViewController.showSnackbarMessage(message: error?.localizedDescription ?? "",                            isError: true)
+        AppDelegate.shared.rootNavigationViewController.showSnackbarMessage(message:
+                     
+                                          error?.localizedDescription ?? "",                            isError: true)
         
       } else {
         AppDelegate.shared.rootNavigationViewController.showSnackbarMessage(message: "A password reset link has been sent to your email",         isError: false)

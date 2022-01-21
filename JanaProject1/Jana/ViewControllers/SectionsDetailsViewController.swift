@@ -21,7 +21,6 @@ class SectionsDetailsViewController: UIViewController {
     super.viewDidLoad()
     setupView()
     fetchData()
-    localization ()
   }
   
   override func viewWillAppear(_ animated: Bool) {
@@ -34,16 +33,18 @@ class SectionsDetailsViewController: UIViewController {
   
   @IBAction func btnAdd(_ sender: Any) {
     let picker = ImagePicker.shared.picker
-    
+    //????
     picker.didFinishPicking { [unowned picker] items, _ in
       if let photo = items.singlePhoto {
         FirebaseManager.shared.addTool(image: photo.image,
                                        type: self.object ?? Constants.sections.garden)
       }
+     
       picker.dismiss(animated: true,
                      completion: nil)
     }
-    present(picker, animated: true,
+    present(picker,
+            animated: true,
             completion: nil)
   }
   
@@ -58,16 +59,10 @@ extension SectionsDetailsViewController {
   }
   
   
-  func localization () {
-    lblTitle.text = NSLocalizedString(" Articles", comment: "")
-    
-  }
-  
-  
   func fetchData() {
+ 
     FirebaseManager.shared.getMyTools { data in
       self.tools.removeAll()
-      
       for item in data {
         if self.object?.rawValue == item.type {
           self.tools.append(item)

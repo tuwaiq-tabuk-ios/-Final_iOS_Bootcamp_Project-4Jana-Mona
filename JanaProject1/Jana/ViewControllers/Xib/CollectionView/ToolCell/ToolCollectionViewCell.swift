@@ -23,6 +23,7 @@ class ToolCollectionViewCell: UICollectionViewCell {
   func configureCell() {
     
     if let obj = object {
+   
       self.imgItem.imageURL(url: obj.iamge ?? "")
       self.lblTitle.text = obj.title
     }
