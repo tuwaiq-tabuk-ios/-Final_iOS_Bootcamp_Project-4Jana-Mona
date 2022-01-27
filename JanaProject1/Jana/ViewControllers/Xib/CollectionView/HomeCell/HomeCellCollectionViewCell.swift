@@ -15,7 +15,7 @@ class HomeCellCollectionViewCell: UICollectionViewCell {
     // Initialization code
   }
   
-  var object: Constants.sections?
+  var object: K.Sections?
   
   
   func configureCell() {

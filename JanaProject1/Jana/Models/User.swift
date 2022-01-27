@@ -8,7 +8,7 @@
 import Foundation
 
 // MARK: - UserModel
-struct UserModel: Codable {
+struct User: Codable {
     let udid, userName, email: String
 
     enum CodingKeys: String, CodingKey {

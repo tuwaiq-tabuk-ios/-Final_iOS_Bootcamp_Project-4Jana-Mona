@@ -9,8 +9,7 @@
 import Foundation
 
 // MARK: - MessageModel
-
-struct MessageModel: Codable {
+struct Message: Codable {
     let uid, uidUser, message: String
     let isRead: Bool
     let uidSender, createdDate: String

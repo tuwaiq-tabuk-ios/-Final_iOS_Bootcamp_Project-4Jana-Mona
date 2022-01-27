@@ -17,7 +17,7 @@ class ToolCollectionViewCell: UICollectionViewCell {
     super.awakeFromNib()
   }
   
-  var object: ToolModel?
+  var object: Tool?
  
   
   func configureCell() {

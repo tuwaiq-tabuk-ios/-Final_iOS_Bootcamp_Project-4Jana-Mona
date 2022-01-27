@@ -13,7 +13,7 @@ class ArticlesViewController: UIViewController {
   
   @IBOutlet weak var lblArticles: UILabel!
   
-  var items: [ArticleModel] = []
+  var items: [Article] = []
   
   override func viewDidLoad() {
     super.viewDidLoad()

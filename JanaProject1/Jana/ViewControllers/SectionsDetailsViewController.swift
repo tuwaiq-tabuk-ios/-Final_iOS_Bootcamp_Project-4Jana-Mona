@@ -13,9 +13,9 @@ class SectionsDetailsViewController: UIViewController {
   
   @IBOutlet weak var collectionView: UICollectionView!
   
-  var object: Constants.sections?
+  var object: K.Sections?
   
-  var tools: [ToolModel] = []
+  var tools: [Tool] = []
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -37,7 +37,7 @@ class SectionsDetailsViewController: UIViewController {
     picker.didFinishPicking { [unowned picker] items, _ in
       if let photo = items.singlePhoto {
         FirebaseManager.shared.addTool(image: photo.image,
-                                       type: self.object ?? Constants.sections.garden)
+                                       type: self.object ?? K.Sections.garden)
       }
      
       picker.dismiss(animated: true,
@@ -47,10 +47,6 @@ class SectionsDetailsViewController: UIViewController {
             animated: true,
             completion: nil)
   }
-  
-}
-
-extension SectionsDetailsViewController {
   
   
   func setupView() {
@@ -72,8 +68,10 @@ extension SectionsDetailsViewController {
       self.collectionView.reloadData()
     }
   }
-  
 }
+
+
+
 
 extension SectionsDetailsViewController: UICollectionViewDataSource {
   
@@ -87,7 +85,8 @@ extension SectionsDetailsViewController: UICollectionViewDataSource {
   func collectionView(_ collectionView: UICollectionView, cellForItemAt
                       indexPath: IndexPath) -> UICollectionViewCell {
     
-    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ToolCollectionViewCell", for: indexPath) as! ToolCollectionViewCell
+    let cell = collectionView
+      .dequeueReusableCell(withReuseIdentifier: "ToolCollectionViewCell", for: indexPath) as! ToolCollectionViewCell
     cell.object = self.tools[indexPath.row]
     cell.configureCell()
     return cell
@@ -102,7 +101,7 @@ extension SectionsDetailsViewController: UICollectionViewDelegateFlowLayout {
                       collectionViewLayout: UICollectionViewLayout, sizeForItemAt
                       indexPath: IndexPath) -> CGSize {
     
-    let size = (collectionView.frame.width - 20) / 2
+    let size = (collectionView.frame.width - 20) / 3
     return CGSize(width: size, height: size + 25)
     
   }

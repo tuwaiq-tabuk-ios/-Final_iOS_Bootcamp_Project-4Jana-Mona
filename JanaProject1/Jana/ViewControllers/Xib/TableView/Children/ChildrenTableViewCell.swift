@@ -15,7 +15,7 @@ class ChildrenTableViewCell: UITableViewCell {
   
   @IBOutlet weak var lblDateOfBirth: UILabel!
   
-  var object: ChildModel?
+  var object: Child?
   
   override func awakeFromNib() {
     super.awakeFromNib()

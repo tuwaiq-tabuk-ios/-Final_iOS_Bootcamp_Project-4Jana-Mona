@@ -13,7 +13,7 @@ class ProfileViewController: UIViewController {
   
   @IBOutlet weak var lblProfile: UILabel!
   
-  let items: [Constants.Menu] = [.children,
+  let items: [K.Menu] = [.children,
                                  .logout]
   
   

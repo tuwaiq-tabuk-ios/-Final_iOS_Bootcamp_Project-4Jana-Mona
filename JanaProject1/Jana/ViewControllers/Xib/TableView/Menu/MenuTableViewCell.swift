@@ -18,7 +18,7 @@ class MenuTableViewCell: UITableViewCell {
     // Initialization code
   }
   
-  var object: Constants.Menu?
+  var object: K.Menu?
      
   func configureCell() {
     if let obj = object {

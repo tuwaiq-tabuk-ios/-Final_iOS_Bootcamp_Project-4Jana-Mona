@@ -13,7 +13,7 @@ class ArticleDetailsViewController: UIViewController {
   
   @IBOutlet weak var lblDetials: UILabel!
   
-  var object: ArticleModel?
+  var object: Article?
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -30,17 +30,10 @@ class ArticleDetailsViewController: UIViewController {
   @IBAction func btnBack(_ sender: Any) {
     self.navigationController?.popViewController(animated: true)
   }
-}
 
-
-extension ArticleDetailsViewController {
-  
   
   func setupView() {
     self.lblTitle.text = self.object?.title
     self.lblDetials.text = self.object?.details
   }
-  
-  
-
 }
