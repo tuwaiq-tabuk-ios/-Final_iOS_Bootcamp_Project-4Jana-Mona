@@ -18,7 +18,7 @@ class ArticlesTableViewCell: UITableViewCell {
     // Initialization code
   }
   
-  var object: ArticleModel?
+  var object: Article?
   
   
   func configureCell() {

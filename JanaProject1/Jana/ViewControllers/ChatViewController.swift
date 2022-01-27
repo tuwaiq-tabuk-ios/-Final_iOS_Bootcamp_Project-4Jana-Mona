@@ -15,9 +15,9 @@ class ChatViewController: UIViewController {
   
   @IBOutlet weak var txtMessage: UITextField!
   
-  var user: UserModel?
+  var user: User?
   
-  var messages: [MessageModel] = []
+  var messages: [Message] = []
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -46,11 +46,7 @@ class ChatViewController: UIViewController {
     
   }
   
-}
 
-extension ChatViewController {
-  
-  
   func setupView() {
     self.lblPersonName.text = self.user?.userName
     
@@ -82,6 +78,8 @@ extension ChatViewController {
   
 }
 
+
+
 extension ChatViewController: UITableViewDataSource {
   
   
@@ -95,7 +93,8 @@ extension ChatViewController: UITableViewDataSource {
   func tableView(_ tableView: UITableView, cellForRowAt
                  indexPath: IndexPath) -> UITableViewCell {
     
-    let cell = tableView.dequeueReusableCell(withIdentifier: "ChatTableViewCell") as! ChatTableViewCell
+    let cell = tableView
+      .dequeueReusableCell(withIdentifier: "ChatTableViewCell") as! ChatTableViewCell
     cell.object = self.messages[indexPath.row]
     cell.configureCell()
     return cell

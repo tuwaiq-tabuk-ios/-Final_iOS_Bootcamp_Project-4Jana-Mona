@@ -7,11 +7,11 @@
 
 import Foundation
 
-class Constants {
+class K {
   
-  static let shared = Constants()
+  static let shared = K()
   
-  enum sections: Int {
+  enum Sections: Int {
     case kitchen
     case bedrooms
     case bathrooms

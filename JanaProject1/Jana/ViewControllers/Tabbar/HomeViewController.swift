@@ -19,14 +19,14 @@ class HomeViewController: UIViewController {
   @IBOutlet weak var lblinsideHome: UILabel!
   @IBOutlet weak var lbloutsideHome: UILabel!
   
-  let insideHomeItems: [Constants.sections] = [.kitchen,
-                                               .bedrooms,
-                                               .bathrooms]
+  let insideHomeItems: [K.Sections] = [.kitchen,
+                                       .bedrooms,
+                                       .bathrooms]
   
-  let outsideHomeItems: [Constants.sections] = [.garden,
-                                                .restaurant,
-                                                .hospital,
-                                                .school]
+  let outsideHomeItems: [K.Sections] = [.garden,
+                                        .restaurant,
+                                        .hospital,
+                                        .school]
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -72,7 +72,8 @@ extension HomeViewController: UICollectionViewDataSource {
     }
   }
   
-  func collectionView(_ collectionView: UICollectionView, cellForItemAt
+  func collectionView(_ collectionView: UICollectionView,
+                      cellForItemAt
                       indexPath: IndexPath) -> UICollectionViewCell {
     if collectionView == self.coInsideHome {
       let cell = self.coInsideHome.dequeueReusableCell(withReuseIdentifier: "HomeCellCollectionViewCell", for: indexPath) as! HomeCellCollectionViewCell
@@ -91,7 +92,8 @@ extension HomeViewController: UICollectionViewDataSource {
 
 extension HomeViewController: UICollectionViewDelegate {
   
-  func collectionView(_ collectionView: UICollectionView, didSelectItemAt
+  func collectionView(_ collectionView: UICollectionView,
+                      didSelectItemAt
                       indexPath: IndexPath) {
     let vc = UIStoryboard.mainStoryboard.instantiateViewController(withIdentifier: "SectionsDetailsViewController") as! SectionsDetailsViewController
     
@@ -109,10 +111,11 @@ extension HomeViewController: UICollectionViewDelegate {
 extension HomeViewController: UICollectionViewDelegateFlowLayout {
   
   func collectionView(_ collectionView: UICollectionView, layout
-                      collectionViewLayout: UICollectionViewLayout, sizeForItemAt
+                      collectionViewLayout: UICollectionViewLayout,
+                      sizeForItemAt
                       indexPath: IndexPath) -> CGSize {
     
-    let width = (collectionView.frame.width - 20) / 3
+    let width = (collectionView.frame.width - 20) / 2
     let height = (collectionView.frame.height / 2) - 5
     return CGSize(width: width, height: height)
     

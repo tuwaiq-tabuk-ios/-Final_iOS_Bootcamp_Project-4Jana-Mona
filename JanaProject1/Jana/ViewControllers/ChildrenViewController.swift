@@ -13,7 +13,7 @@ class ChildrenViewController: UIViewController {
   
   @IBOutlet weak var lblChildren: UILabel!
   
-  var childrenItems: [ChildModel] = []
+  var childrenItems: [Child] = []
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -62,10 +62,6 @@ extension ChildrenViewController {
     }
   }
   
-}
-
-extension ChildrenViewController: UITableViewDataSource {
-  
   
   func tableView(_ tableView: UITableView, numberOfRowsInSection
                  section: Int) -> Int {
@@ -77,7 +73,8 @@ extension ChildrenViewController: UITableViewDataSource {
   func tableView(_ tableView: UITableView, cellForRowAt
                  indexPath: IndexPath) -> UITableViewCell {
     
-    let cell = tableView.dequeueReusableCell(withIdentifier: "ChildrenTableViewCell",
+    let cell = tableView
+      .dequeueReusableCell(withIdentifier: "ChildrenTableViewCell",
                                              for: indexPath) as! ChildrenTableViewCell
     
     cell.object = self.childrenItems[indexPath.row]

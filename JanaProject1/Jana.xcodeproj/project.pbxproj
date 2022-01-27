@@ -19,6 +19,7 @@
 		39C5330A27851346001C34CC /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C532FF27851346001C34CC /* DateExtensions.swift */; };
 		39C5330B27851346001C34CC /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C5330027851346001C34CC /* UIColorExtensions.swift */; };
 		39C5330C27851346001C34CC /* UITableViewExtesions.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C5330127851346001C34CC /* UITableViewExtesions.swift.swift */; };
+		39F05915279FDD5900EEF88A /* UtilsSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F05914279FDD5900EEF88A /* UtilsSV.swift */; };
 		9B6E4A01276ACC8F0065F5D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6E4A00276ACC8F0065F5D7 /* AppDelegate.swift */; };
 		9B6E4A03276ACC8F0065F5D7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6E4A02276ACC8F0065F5D7 /* SceneDelegate.swift */; };
 		9B6E4A08276ACC8F0065F5D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B6E4A06276ACC8F0065F5D7 /* Main.storyboard */; };
@@ -55,12 +56,12 @@
 		9BE6225B2771E96B00204600 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE6225A2771E96B00204600 /* MainNavigationController.swift */; };
 		9BE6225D2771EA2600204600 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE6225C2771EA2600204600 /* SignUpViewController.swift */; };
 		9BE6225F2771EB0F00204600 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE6225E2771EB0F00204600 /* ForgotPasswordViewController.swift */; };
-		9BE622612771EE3000204600 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE622602771EE3000204600 /* UserModel.swift */; };
+		9BE622612771EE3000204600 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE622602771EE3000204600 /* User.swift */; };
 		9BE622632771EE9E00204600 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE622622771EE9E00204600 /* UserProfile.swift */; };
-		9BE622652771FFB500204600 /* ArticleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE622642771FFB500204600 /* ArticleModel.swift */; };
-		9BE622672772072500204600 /* MessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE622662772072500204600 /* MessageModel.swift */; };
-		9BE62269277212DE00204600 /* ChildModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE62268277212DE00204600 /* ChildModel.swift */; };
-		9BE6226B27723C9300204600 /* ToolModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE6226A27723C9300204600 /* ToolModel.swift */; };
+		9BE622652771FFB500204600 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE622642771FFB500204600 /* Article.swift */; };
+		9BE622672772072500204600 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE622662772072500204600 /* Message.swift */; };
+		9BE62269277212DE00204600 /* Child.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE62268277212DE00204600 /* Child.swift */; };
+		9BE6226B27723C9300204600 /* Tool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE6226A27723C9300204600 /* Tool.swift */; };
 		B40B2ACE415B74CDBEA21471 /* Pods_Jana.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA8F1646433DDFA067981818 /* Pods_Jana.framework */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +81,7 @@
 		39C532FF27851346001C34CC /* DateExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
 		39C5330027851346001C34CC /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		39C5330127851346001C34CC /* UITableViewExtesions.swift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtesions.swift.swift; sourceTree = "<group>"; };
+		39F05914279FDD5900EEF88A /* UtilsSV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilsSV.swift; sourceTree = "<group>"; };
 		9B6E49FD276ACC8F0065F5D7 /* Jana.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jana.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B6E4A00276ACC8F0065F5D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B6E4A02276ACC8F0065F5D7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -118,12 +120,12 @@
 		9BE6225A2771E96B00204600 /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 		9BE6225C2771EA2600204600 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		9BE6225E2771EB0F00204600 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
-		9BE622602771EE3000204600 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		9BE622602771EE3000204600 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		9BE622622771EE9E00204600 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
-		9BE622642771FFB500204600 /* ArticleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleModel.swift; sourceTree = "<group>"; };
-		9BE622662772072500204600 /* MessageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageModel.swift; sourceTree = "<group>"; };
-		9BE62268277212DE00204600 /* ChildModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildModel.swift; sourceTree = "<group>"; };
-		9BE6226A27723C9300204600 /* ToolModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolModel.swift; sourceTree = "<group>"; };
+		9BE622642771FFB500204600 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		9BE622662772072500204600 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		9BE62268277212DE00204600 /* Child.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Child.swift; sourceTree = "<group>"; };
+		9BE6226A27723C9300204600 /* Tool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tool.swift; sourceTree = "<group>"; };
 		C0BB6C780681E5E1E8897D76 /* Pods-Jana.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jana.release.xcconfig"; path = "Target Support Files/Pods-Jana/Pods-Jana.release.xcconfig"; sourceTree = "<group>"; };
 		E8C211582D08AD1E74EF655D /* Pods-Jana.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jana.debug.xcconfig"; path = "Target Support Files/Pods-Jana/Pods-Jana.debug.xcconfig"; sourceTree = "<group>"; };
 		EA8F1646433DDFA067981818 /* Pods_Jana.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Jana.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -251,6 +253,7 @@
 				9BE622542771DA0700204600 /* ImagePicker.swift */,
 				9BE622582771E67E00204600 /* FirebaseManager.swift */,
 				9BE622622771EE9E00204600 /* UserProfile.swift */,
+				39F05914279FDD5900EEF88A /* UtilsSV.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -258,11 +261,11 @@
 		9B6E4A19276ACCCF0065F5D7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				9BE622662772072500204600 /* MessageModel.swift */,
-				9BE622602771EE3000204600 /* UserModel.swift */,
-				9BE622642771FFB500204600 /* ArticleModel.swift */,
-				9BE62268277212DE00204600 /* ChildModel.swift */,
-				9BE6226A27723C9300204600 /* ToolModel.swift */,
+				9BE622662772072500204600 /* Message.swift */,
+				9BE622602771EE3000204600 /* User.swift */,
+				9BE622642771FFB500204600 /* Article.swift */,
+				9BE62268277212DE00204600 /* Child.swift */,
+				9BE6226A27723C9300204600 /* Tool.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -519,16 +522,16 @@
 				9B6E4A7B276DE9290065F5D7 /* ChatUserViewController.swift in Sources */,
 				9B6E4A70276DDFB60065F5D7 /* Constants.swift in Sources */,
 				9BE622532771D83900204600 /* AddChildViewController.swift in Sources */,
-				9BE6226B27723C9300204600 /* ToolModel.swift in Sources */,
+				9BE6226B27723C9300204600 /* Tool.swift in Sources */,
 				9B6E4A84276DED3B0065F5D7 /* ChatTableViewCell.swift in Sources */,
-				9BE622612771EE3000204600 /* UserModel.swift in Sources */,
+				9BE622612771EE3000204600 /* User.swift in Sources */,
 				9BE6225B2771E96B00204600 /* MainNavigationController.swift in Sources */,
 				9B6E4A01276ACC8F0065F5D7 /* AppDelegate.swift in Sources */,
 				9BE622502771D45E00204600 /* ChildrenTableViewCell.swift in Sources */,
 				39C5330827851346001C34CC /* UIViewExtensions.swift in Sources */,
 				9B6E4A7F276DE9880065F5D7 /* ChatUserTableViewCell.swift in Sources */,
 				39C5330627851346001C34CC /* UITextViewExtensions.swift in Sources */,
-				9BE622652771FFB500204600 /* ArticleModel.swift in Sources */,
+				9BE622652771FFB500204600 /* Article.swift in Sources */,
 				39C5330C27851346001C34CC /* UITableViewExtesions.swift.swift in Sources */,
 				9B6E4A66276DDACC0065F5D7 /* HomeViewController.swift in Sources */,
 				9BE622632771EE9E00204600 /* UserProfile.swift in Sources */,
@@ -552,9 +555,10 @@
 				9B6E4A76276DE2180065F5D7 /* ToolCollectionViewCell.swift in Sources */,
 				39C5330B27851346001C34CC /* UIColorExtensions.swift in Sources */,
 				9BE6225D2771EA2600204600 /* SignUpViewController.swift in Sources */,
+				39F05915279FDD5900EEF88A /* UtilsSV.swift in Sources */,
 				39C5330427851346001C34CC /* UIViewContollerExtensions.swift in Sources */,
-				9BE62269277212DE00204600 /* ChildModel.swift in Sources */,
-				9BE622672772072500204600 /* MessageModel.swift in Sources */,
+				9BE62269277212DE00204600 /* Child.swift in Sources */,
+				9BE622672772072500204600 /* Message.swift in Sources */,
 				9BE6225F2771EB0F00204600 /* ForgotPasswordViewController.swift in Sources */,
 				9B6E4A89276DF5C80065F5D7 /* ArticlesViewController.swift in Sources */,
 			);

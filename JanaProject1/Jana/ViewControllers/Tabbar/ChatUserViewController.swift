@@ -12,7 +12,7 @@ class ChatUserViewController: UIViewController {
   @IBOutlet weak var tableView: UITableView!
   @IBOutlet weak var lblchat: UILabel!
   
-  var users: [UserModel] = []
+  var users: [User] = []
   
   override func viewDidLoad() {
     super.viewDidLoad()

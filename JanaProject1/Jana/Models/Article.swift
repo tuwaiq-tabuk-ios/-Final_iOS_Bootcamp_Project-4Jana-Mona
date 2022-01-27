@@ -8,7 +8,7 @@
 import Foundation
 
 // MARK: - ArticleModel
-struct ArticleModel: Codable {
+struct Article: Codable {
     let udid, title, details, createdDate: String
 
     enum CodingKeys: String, CodingKey {

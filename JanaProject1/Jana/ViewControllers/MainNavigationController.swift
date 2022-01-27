@@ -18,10 +18,7 @@ class MainNavigationController: UINavigationController {
     super.viewWillAppear(animated)
   }
   
-}
 
-extension MainNavigationController {
-  
   func setupView() {
     AppDelegate.shared.rootNavigationViewController = self
     
@@ -31,8 +28,9 @@ extension MainNavigationController {
       vcName = "MainTabbar"
     }
     
-    let vc = UIStoryboard.mainStoryboard.instantiateViewController(withIdentifier: vcName)
-    AppDelegate.shared.rootNavigationViewController.setViewControllers([vc], animated: true)
+    let vc = UIStoryboard.mainStoryboard
+      .instantiateViewController(withIdentifier: vcName)
+    AppDelegate.shared.rootNavigationViewController
+      .setViewControllers([vc], animated: true)
   }
-  
 }

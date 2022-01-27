@@ -8,7 +8,7 @@
 import Foundation
 
 // MARK: - ChildModel
-struct ChildModel: Codable {
+struct Child: Codable {
     let uid, iamge, name, dateOfBirth: String
     let relationship, createdDate: String
 

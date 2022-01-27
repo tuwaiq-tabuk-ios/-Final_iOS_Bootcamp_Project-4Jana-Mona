@@ -33,7 +33,7 @@ class ChatTableViewCell: UITableViewCell {
     // Initialization code
   }
   
-  var object: MessageModel?
+  var object: Message?
   
   @IBAction func btnOnTapMessage(_ sender: Any) {
     

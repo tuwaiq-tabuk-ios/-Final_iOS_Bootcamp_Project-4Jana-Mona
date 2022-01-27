@@ -53,13 +53,15 @@ class SignInViewController: UIViewController {
     
   
     @IBAction func btnForgotPassword(_ sender: Any) {
-        let vc = UIStoryboard.mainStoryboard.instantiateViewController(withIdentifier: "ForgotPasswordViewController")
+        let vc = UIStoryboard.mainStoryboard
+        .instantiateViewController(withIdentifier: "ForgotPasswordViewController")
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
   
     @IBAction func btnSignUp(_ sender: Any) {
-        let vc = UIStoryboard.mainStoryboard.instantiateViewController(withIdentifier: "SignUpViewController")
+        let vc = UIStoryboard.mainStoryboard
+        .instantiateViewController(withIdentifier: "SignUpViewController")
         self.navigationController?.setViewControllers([vc], animated: true)
     }
     
@@ -86,23 +88,29 @@ extension SignInViewController {
     
     func validation() -> Bool {
         
-        guard let email = txtEmail.text, email.trimmingCharacters(in: .whitespaces) != "" else {
-            self.showSnackbarMessage(message: "Please enter your email", isError: true)
+        guard let email = txtEmail.text,
+                  email.trimmingCharacters(in: .whitespaces) != "" else {
+            self.showSnackbarMessage(message: "Please enter your email",
+                                     isError: true)
             return false
         }
         
-        guard let password = txtPassword.text, password.trimmingCharacters(in: .whitespaces) != "" else {
-            self.showSnackbarMessage(message: "Please enter your password", isError: true)
+        guard let password = txtPassword.text,
+                  password.trimmingCharacters(in: .whitespaces) != "" else {
+            self.showSnackbarMessage(message: "Please enter your password",
+                                     isError: true)
             return false
         }
         
         guard email.isValidEmail() else {
-            self.showSnackbarMessage(message: "Please enter a valid email", isError: true)
+            self.showSnackbarMessage(message: "Please enter a valid email",
+                                     isError: true)
             return false
         }
         
         guard password.count > 5 else {
-            self.showSnackbarMessage(message: "Password must be at least 6 characters long", isError: true)
+            self.showSnackbarMessage(message: "Password must be at least 6 characters long",
+                                     isError: true)
             return false
         }
         

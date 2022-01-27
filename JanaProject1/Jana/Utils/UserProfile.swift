@@ -11,7 +11,7 @@ class UserProfile {
   //???
   static let shared = UserProfile()
   
-  var currentUser: UserModel? {
+  var currentUser: User? {
     set {
       guard newValue != nil else {
         UserDefaults.standard.removeObject(forKey: "current-user")
@@ -23,7 +23,7 @@ class UserProfile {
       UserDefaults.standard.synchronize()
     } get {
       if let data = UserDefaults.standard.value(forKey: "current-user") as? Data {
-        return try? PropertyListDecoder().decode(UserModel.self, from: data)
+        return try? PropertyListDecoder().decode(User.self, from: data)
       }
       
       return nil

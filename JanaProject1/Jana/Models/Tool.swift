@@ -8,7 +8,7 @@
 import Foundation
 
 // MARK: - ToolModel
-struct ToolModel: Codable {
+struct Tool: Codable {
     let uid, iamge, title: String?
     let type: Int?
     let createdDate: String?

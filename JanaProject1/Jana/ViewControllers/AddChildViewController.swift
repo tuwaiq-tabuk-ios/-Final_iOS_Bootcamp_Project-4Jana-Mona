@@ -68,19 +68,22 @@ extension AddChildViewController {
       return false
     }
     
-    guard let name = txtName.text, name.trimmingCharacters(in: .whitespaces) != "" else {
+    guard let name = txtName.text,
+              name.trimmingCharacters(in: .whitespaces) != "" else {
       self.showSnackbarMessage(message: "Please enter name",
                                isError: true)
       return false
     }
     
-    guard let dateOfBirth = txtDateOfBirth.text, dateOfBirth.trimmingCharacters(in: .whitespaces) != "" else {
+    guard let dateOfBirth = txtDateOfBirth.text,
+              dateOfBirth.trimmingCharacters(in: .whitespaces) != "" else {
       self.showSnackbarMessage(message: "Please enter date of birth",
                                isError: true)
       return false
     }
     
-    guard let relationship = txtRelationship.text, relationship.trimmingCharacters(in: .whitespaces) != "" else {
+    guard let relationship = txtRelationship.text,
+              relationship.trimmingCharacters(in: .whitespaces) != "" else {
       self.showSnackbarMessage(message: "Please enter relationship",
                                isError: true)
       return false

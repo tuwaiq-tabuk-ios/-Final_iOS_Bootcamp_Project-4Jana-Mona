@@ -18,7 +18,7 @@ class ChatUserTableViewCell: UITableViewCell {
     
   }
   
-  var object: UserModel?
+  var object: User?
   
   
   func configureCell() {

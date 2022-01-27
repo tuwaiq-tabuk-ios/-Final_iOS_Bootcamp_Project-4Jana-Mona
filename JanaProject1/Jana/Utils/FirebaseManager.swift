@@ -24,13 +24,15 @@ class FirebaseManager {
                      email: String,
                      password: String) {
     
-    FirebaseManager.showLoader(isShowLoader: true)
+    UtilsSV.showLoader(isShowLoader: true)
     
     Auth.auth().createUser(withEmail: email,
                            password: password) { (result, error) in
       //          Auth.auth().currentUser(
       if (error != nil) {
-        AppDelegate.shared.rootNavigationViewController.showSnackbarMessage(message: error?.localizedDescription ?? "",                            isError: true)
+        AppDelegate.shared.rootNavigationViewController
+          .showSnackbarMessage(message: error?.localizedDescription ?? "",
+                               isError: true)
         
       } else {
         let udid = result?.user.uid ?? ""
@@ -44,38 +46,42 @@ class FirebaseManager {
       if let _ = result {
         
         
-        let vc = UIStoryboard.mainStoryboard.instantiateViewController(withIdentifier: "SignInViewController")
-        AppDelegate.shared.rootNavigationViewController.setViewControllers([vc], animated: true)
+        let vc = UIStoryboard.mainStoryboard
+          .instantiateViewController(withIdentifier: "SignInViewController")
+        AppDelegate.shared.rootNavigationViewController
+          .setViewControllers([vc], animated: true)
       }
       
     }
-    
-    FirebaseManager.showLoader(isShowLoader: false)
-    
+    UtilsSV.showLoader(isShowLoader: false)
   }
   
   
   func loginWithEmail(email: String,
                       password: String) {
     
-    FirebaseManager.showLoader(isShowLoader: true)
+    UtilsSV.showLoader(isShowLoader: true)
     
     Auth.auth().signIn(withEmail: email,
                        password: password) { (result, error) in
       if error != nil {
-        FirebaseManager.showLoader(isShowLoader: false)
-        AppDelegate.shared.rootNavigationViewController.showSnackbarMessage(message: "Please confirm your email or password",                      isError: true)
+        UtilsSV.showLoader(isShowLoader: false)
+        AppDelegate.shared.rootNavigationViewController
+          .showSnackbarMessage(message: "Please confirm your email or password",
+                               isError: true)
         
       } else if let _ = Auth.auth().currentUser {
-        FirebaseManager.showLoader(isShowLoader: false)
+        UtilsSV.showLoader(isShowLoader: false)
         
         self.getUserByUdid(udid: result?.user.uid ?? "") { (user) in
           if let tempUser = user {
             UserProfile.shared.currentUser = tempUser
             
             
-            let vc = UIStoryboard.mainStoryboard.instantiateViewController(withIdentifier: "MainTabbar")
-            AppDelegate.shared.rootNavigationViewController.setViewControllers([vc], animated: true)
+            let vc = UIStoryboard.mainStoryboard
+              .instantiateViewController(withIdentifier: "MainTabbar")
+            AppDelegate.shared.rootNavigationViewController
+              .setViewControllers([vc], animated: true)
           }
           
         }
@@ -86,17 +92,20 @@ class FirebaseManager {
   
   
   func forgotPassword(email: String) {
-    FirebaseManager.showLoader(isShowLoader: true)
+    UtilsSV.showLoader(isShowLoader: true)
     
     Auth.auth().sendPasswordReset(withEmail: email) { error in
-      FirebaseManager.showLoader(isShowLoader: false)
+      UtilsSV.showLoader(isShowLoader: false)
       if error != nil {
-        AppDelegate.shared.rootNavigationViewController.showSnackbarMessage(message:
-                     
-                                          error?.localizedDescription ?? "",                            isError: true)
+        AppDelegate.shared.rootNavigationViewController
+          .showSnackbarMessage(message:error?.localizedDescription ?? "",
+                               isError: true)
+      
         
       } else {
-        AppDelegate.shared.rootNavigationViewController.showSnackbarMessage(message: "A password reset link has been sent to your email",         isError: false)
+        AppDelegate.shared.rootNavigationViewController
+          .showSnackbarMessage(message: "A password reset link has been sent to your email",
+                               isError: false)
         AppDelegate.shared.rootNavigationViewController.popViewController(animated: true)
       }
     }
@@ -104,34 +113,37 @@ class FirebaseManager {
   
   
   func logout(completion: @escaping (_ success: Bool) -> Void) {
-    FirebaseManager.showLoader(isShowLoader: true)
+    UtilsSV.showLoader(isShowLoader: true)
     
     do {
       try Auth.auth().signOut()
       UserProfile.shared.currentUser = nil
-      FirebaseManager.showLoader(isShowLoader: false)
+      UtilsSV.showLoader(isShowLoader: false)
       
-      let vc = UIStoryboard.mainStoryboard.instantiateViewController(withIdentifier: "SignInViewController")
-      AppDelegate.shared.rootNavigationViewController.setViewControllers([vc], animated: true)
+      let vc = UIStoryboard.mainStoryboard
+        .instantiateViewController(withIdentifier: "SignInViewController")
+      AppDelegate.shared.rootNavigationViewController
+        .setViewControllers([vc], animated: true)
       completion(true)
       
     } catch {
-      FirebaseManager.showLoader(isShowLoader: false)
+      UtilsSV.showLoader(isShowLoader: false)
       completion(false)
     }
   }
   
   
-  func getAllUsers(completion: @escaping (_ date: [UserModel]) -> Void) {
+  func getAllUsers(completion: @escaping (_ date: [User]) -> Void) {
     
-    FirebaseManager.showLoader(isShowLoader: true)
+    UtilsSV.showLoader(isShowLoader: true)
     
-    self.DB_REF.child("User").observe(.value) { (snapshot) in
-      if let value = snapshot.value as? [String : AnyObject] {
-        var data: [UserModel] = []
+    self.DB_REF.child("User")
+        .observe(.value) { (DataSnapshot) in
+      if let value = DataSnapshot.value as? [String : AnyObject] {
+        var data: [User] = []
         do {
           for (_, item) in value {
-            let model = try FirebaseDecoder().decode(UserModel.self, from: item)
+            let model = try FirebaseDecoder().decode(User.self, from: item)
             data.append(model)
           }
         } catch {
@@ -142,64 +154,68 @@ class FirebaseManager {
       }
     }
     
-    FirebaseManager.showLoader(isShowLoader: false)
+    UtilsSV.showLoader(isShowLoader: false)
   }
   
   
   func getUserByUdid(udid: String,
-                     completion: @escaping (_ user: UserModel?) -> Void) {
+                     completion: @escaping (_ user: User?) -> Void) {
     
-    FirebaseManager.showLoader(isShowLoader: true)
+    UtilsSV.showLoader(isShowLoader: true)
     
     self.DB_REF.child("User").child(udid).observe(.value) { (snapshot) in
       if let value = snapshot.value as? [String : AnyObject] {
         
         do {
-          let model = try FirebaseDecoder().decode(UserModel.self, from: value)
+          let model = try FirebaseDecoder().decode(User.self, from: value)
           completion(model)
         }
         catch {
-          AppDelegate.shared.rootNavigationViewController.showSnackbarMessage(message: "There was a problem logging in", isError: true)
+          AppDelegate.shared.rootNavigationViewController
+            .showSnackbarMessage(message: "There was a problem logging in", isError: true)
           completion(nil)
         }
         completion(nil)
       }
     }
-    FirebaseManager.showLoader(isShowLoader: false)
+    UtilsSV.showLoader(isShowLoader: false)
   }
   
   
   func addArticle(title: String,
                   details: String) {
     
-    FirebaseManager.showLoader(isShowLoader: true)
+    UtilsSV.showLoader(isShowLoader: true)
     
     let udid = self.DB_REF.childByAutoId().key ?? ""
-    let dic: [String: Any] = [
+    let dictionary: [String: Any] = [
       "udid": udid,
       "title": title,
       "details": details,
-      "created-date": Date().toString(customFormat: "E, d MMM yyyy HH:mm:ss Z"),
+      "created-date": Date()
+        .toString(customFormat: "E, d MMM yyyy HH:mm:ss Z"),
     ]
-    self.DB_REF.child("Article").child(udid).setValue(dic)
+    self.DB_REF.child("Article").child(udid).setValue(dictionary)
     
-    FirebaseManager.showLoader(isShowLoader: false)
+    UtilsSV.showLoader(isShowLoader: false)
     
   }
   
   
-  func getArticles(completion: @escaping (_ date: [ArticleModel]) -> Void) {
+  func getArticles(completion: @escaping (_ date: [Article]) -> Void) {
     
-    FirebaseManager.showLoader(isShowLoader: true)
+    UtilsSV.showLoader(isShowLoader: true)
     
-    self.DB_REF.child("Article").observe(.value) { (snapshot) in
+    self.DB_REF.child("Article")
+      .observe(.value) { (snapshot) in
       
       if let value = snapshot.value as? [String : AnyObject] {
-        var data: [ArticleModel] = []
+        var data: [Article] = []
         
         do {
           for (_, item) in value {
-            let model = try FirebaseDecoder().decode(ArticleModel.self, from: item)
+            let model = try FirebaseDecoder()
+              .decode(Article.self, from: item)
             data.append(model)
           }
         }
@@ -212,7 +228,7 @@ class FirebaseManager {
         completion(tempData)
       }
     }
-    FirebaseManager.showLoader(isShowLoader: false)
+    UtilsSV.showLoader(isShowLoader: false)
   }
   
   
@@ -220,27 +236,28 @@ class FirebaseManager {
                   message: String) {
     
     let uid = self.DB_REF.childByAutoId().key ?? ""
-    let dic: [String: Any] = ["uid": uid,
+    let dictionary: [String: Any] = ["uid": uid,
                               "uid-user": uidUser,
                               "message": message,
                               "is-read": false,
                               "uid-sender": Auth.auth().currentUser?.uid ?? "",
                               "created-date": Date().toString(customFormat: "E, d MMM yyyy HH:mm:ss Z"),
     ]
-    self.DB_REF.child("Messages").child(uid).setValue(dic)
+    self.DB_REF.child("Messages").child(uid).setValue(dictionary)
     
   }
   
   
-  func getMessages(completion: @escaping (_ data: [MessageModel]) -> Void) {
+  func getMessages(completion: @escaping (_ data: [Message]) -> Void) {
     
     self.DB_REF.child("Messages").observe(.value) { (snapshot) in
       if let value = snapshot.value as? [String : AnyObject] {
-        var data: [MessageModel] = []
+        var data: [Message] = []
         
         do {
           for (_, value) in value {
-            let model = try FirebaseDecoder().decode(MessageModel.self, from: value)
+            let model = try FirebaseDecoder().decode(Message.self,
+                                                     from: value)
             data.append(model)
           }
         }
@@ -262,25 +279,25 @@ class FirebaseManager {
                 dateOfBirth: String,
                 relationship: String) {
     
-    FirebaseManager.showLoader(isShowLoader: true)
+    UtilsSV.showLoader(isShowLoader: true)
     
     FirebaseManager.shared.uploadImage(image: image) { url, isError in
       
-      FirebaseManager.showLoader(isShowLoader: false)
+      UtilsSV.showLoader(isShowLoader: false)
       
       if isError ?? false {
         return
       }
       
       let uid = self.DB_REF.childByAutoId().key ?? ""
-      let dic: [String: Any] = ["uid": uid,
+      let dictionary: [String: Any] = ["uid": uid,
                                 "iamge": url,
                                 "name": name,
                                 "date-of-birth": dateOfBirth,
                                 "relationship": relationship,
                                 "created-date": Date().toString(customFormat: "E, d MMM yyyy HH:mm:ss Z"),
       ]
-      self.DB_REF.child("Children").child(UserProfile.shared.currentUser?.udid ?? "").child(uid).setValue(dic)
+      self.DB_REF.child("Children").child(UserProfile.shared.currentUser?.udid ?? "").child(uid).setValue(dictionary)
       
       AppDelegate.shared.rootNavigationViewController.popViewController(animated: true)
       
@@ -288,15 +305,15 @@ class FirebaseManager {
   }
   
   
-  func getChildren(completion: @escaping (_ data: [ChildModel]) -> Void) {
+  func getChildren(completion: @escaping (_ data: [Child]) -> Void) {
     
     self.DB_REF.child("Children").child(UserProfile.shared.currentUser?.udid ?? "").observe(.value) { (snapshot) in
       if let value = snapshot.value as? [String : AnyObject] {
-        var data: [ChildModel] = []
+        var data: [Child] = []
         
         do {
           for (_, value) in value {
-            let model = try FirebaseDecoder().decode(ChildModel.self, from: value)
+            let model = try FirebaseDecoder().decode(Child.self, from: value)
             data.append(model)
           }
         }
@@ -313,40 +330,41 @@ class FirebaseManager {
   
   
   func addTool(image: UIImage?,
-               type: Constants.sections) {
+               type: K.Sections) {
     
-    FirebaseManager.showLoader(isShowLoader: true)
+    UtilsSV.showLoader(isShowLoader: true)
     
     FirebaseManager.shared.uploadImage(image: image) { url, isError in
       
-      FirebaseManager.showLoader(isShowLoader: false)
+      UtilsSV.showLoader(isShowLoader: false)
       
       if isError ?? false {
         return
       }
       
       let uid = self.DB_REF.childByAutoId().key ?? ""
-      let dic: [String: Any] = ["uid": uid,
+      let dictionary: [String: Any] = ["uid": uid,
                                 "iamge": url,
                                 "title": "",
                                 "type": type.rawValue,
                                 "created-date": Date().toString(customFormat: "E, d MMM yyyy HH:mm:ss Z"),
       ]
-      self.DB_REF.child("Tools").child(UserProfile.shared.currentUser?.udid ?? "").child(uid).setValue(dic)
+      self.DB_REF.child("Tools").child(UserProfile.shared.currentUser?.udid ?? "").child(uid).setValue(dictionary)
       
     }
   }
   
   
-  func getMyTools(completion: @escaping (_ data: [ToolModel]) -> Void) {
+  func getMyTools(completion: @escaping (_ data: [Tool]) -> Void) {
     
-    self.DB_REF.child("Tools").child(UserProfile.shared.currentUser?.udid ?? "").observe(.value) { (snapshot) in
-      if let value = snapshot.value as? [String : AnyObject] {
-        var data: [ToolModel] = []
+    self.DB_REF.child("Tools").child(UserProfile.shared.currentUser?.udid ?? "").observe(.value) { (Datasnapshot) in
+      if let value = Datasnapshot.value as? [String : AnyObject] {
+        var data: [Tool] = []
         
         do {
           for (_, value) in value {
-            let model = try FirebaseDecoder().decode(ToolModel.self, from: value)
+            let model = try FirebaseDecoder().decode(Tool.self,
+                                                     from: value)
             data.append(model)
           }
         }
@@ -411,17 +429,6 @@ class FirebaseManager {
       
     }
     
-  }
-  
-  class func showLoader(isShowLoader: Bool) {
-    if isShowLoader {
-      SVProgressHUD.setDefaultMaskType(.custom)
-      SVProgressHUD.setForegroundColor("PrimaryColor".color_)
-      SVProgressHUD.setBackgroundColor(UIColor.white)
-      SVProgressHUD.show()
-    } else {
-      SVProgressHUD.dismiss()
-    }
   }
   
 }

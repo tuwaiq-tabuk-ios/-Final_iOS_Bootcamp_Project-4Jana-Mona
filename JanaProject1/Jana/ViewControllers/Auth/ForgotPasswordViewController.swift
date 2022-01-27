@@ -66,13 +66,16 @@ extension ForgotPasswordViewController {
     
     func validation() -> Bool {
         
-        guard let email = txtEmail.text, email.trimmingCharacters(in: .whitespaces) != "" else {
-            self.showSnackbarMessage(message: "Please enter your email", isError: true)
+        guard let email = txtEmail.text,
+                  email.trimmingCharacters(in: .whitespaces) != "" else {
+            self.showSnackbarMessage(message: "Please enter your email",
+                                     isError: true)
             return false
         }
         
         guard email.isValidEmail() else {
-            self.showSnackbarMessage(message: "Please enter a valid email", isError: true)
+            self.showSnackbarMessage(message: "Please enter a valid email",
+                                     isError: true)
             return false
         }
         
