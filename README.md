@@ -39,11 +39,13 @@ Close family, special needs teachers, health care providers that use the app wit
 ## User stories
    - Create and update the profile of the pacient with his/her profile image, name, date of birth and the name of the family members or doctors who assist the patient.
    
+   
    https://user-images.githubusercontent.com/85816257/151692460-ecc3ed90-ba68-4e37-b62f-bf672afcff8e.mp4
 
    - The app provides two category for pictures:
     1- Inside the house: kitchen - rooms - bathrooms.
     2- Outside the house: garden - hospital - school - restaurant.
+    
     
     ![2](https://user-images.githubusercontent.com/85816257/151692551-dfb4c696-94c9-49d2-8cda-d64c228344ca.png)
 
@@ -54,9 +56,11 @@ Close family, special needs teachers, health care providers that use the app wit
    
    - Articles and tips to help parents deal with their children.
    
+   
    https://user-images.githubusercontent.com/85816257/151692627-d88dbe68-c5b3-4920-8dd9-3a4aaf1f9752.mp4
 
    - The App supports dark/ light modes.
+  
   
   ![4](https://user-images.githubusercontent.com/85816257/151692690-1b75f532-1ef7-40fa-9dd8-d3eb1d7f2058.png)
 
