@@ -1,10 +1,14 @@
 # Final_iOS_Bootcamp_Project-4Jana-Mona
-![4Jana](https://user-images.githubusercontent.com/85816257/150338798-7a622e38-69b7-42a3-9a80-0cc73807d8b3.png)
+
+![4Jana logo](https://user-images.githubusercontent.com/85816257/151692420-708e68a9-8f93-4b88-b470-07e2bce04e97.jpg)
 
 The aim of this app is to facilitate communication through images for non-verbal children with autism or developmental disabilities
 
 ## Motivation
-An application inspired by the PICS system, where this system was developed by Dr. ""Andrew Bundy"" and speech-language pathologist ""Lori Frost"" to help autistic children and people with developmental disabilities communicate with others, a system that does not eliminate verbal communication, but the fact that most autistic children find it difficult to communicate and 50  % of them are non-verbal. Non-verbal communication is considered a means of communication and enhancement of social interaction, the development of speech and increasing the chances of its production. 
+
+![4Jana-5](https://user-images.githubusercontent.com/85816257/151692432-33f8ec0f-eea6-4800-a7f9-97b3db8d3ef3.png)
+
+An application inspired by the PICS system, where this system was developed by Dr.Andrew Bundy and speech-language pathologist Lori Frost to help autistic children and people with developmental disabilities communicate with others, a system that does not eliminate verbal communication, but the fact that most autistic children find it difficult to communicate and 50  % of them are non-verbal. Non-verbal communication is considered a means of communication and enhancement of social interaction, the development of speech and increasing the chances of its production. 
 
 Non-verbal communication is one of the treatment methods for children who suffer from communication problems. It is a system that depends on the exchange of communication through images;  Because autistic children learn to exchange contact through sight, mainly with the use of physical and social reinforcement.  
 
@@ -29,31 +33,37 @@ Also the app has articles and tips for users to help their children .
 ## Target User
 Close family, special needs teachers, health care providers that use the app with autism children.  
 
+![4Jana-2](https://user-images.githubusercontent.com/85816257/151692583-810aad3c-b610-4c96-8796-1af27b5daf5c.png)
+
 
 ## User stories
    - Create and update the profile of the pacient with his/her profile image, name, date of birth and the name of the family members or doctors who assist the patient.
-   - The app provides two category for pictures: 1- Inside the house: kitchen - rooms - bathrooms.
-   - Outside the house: garden - hospital - school - restaurant.
+   
+   https://user-images.githubusercontent.com/85816257/151692460-ecc3ed90-ba68-4e37-b62f-bf672afcff8e.mp4
+
+   - The app provides two category for pictures:
+    1- Inside the house: kitchen - rooms - bathrooms.
+    2- Outside the house: garden - hospital - school - restaurant.
+    
+    ![2](https://user-images.githubusercontent.com/85816257/151692551-dfb4c696-94c9-49d2-8cda-d64c228344ca.png)
+
    - A chat for all users to exchange information and instructions about the patients they take care.
+   
+   ![4Jana-4](https://user-images.githubusercontent.com/85816257/151692608-e3b65851-8ec5-4679-82f0-08be2f8cdc63.png)
+
+   
    - Articles and tips to help parents deal with their children.
+   
+   https://user-images.githubusercontent.com/85816257/151692627-d88dbe68-c5b3-4920-8dd9-3a4aaf1f9752.mp4
+
    - The App supports dark/ light modes.
-   - The app support different languages.
+  
+  ![4](https://user-images.githubusercontent.com/85816257/151692690-1b75f532-1ef7-40fa-9dd8-d3eb1d7f2058.png)
+
+![3](https://user-images.githubusercontent.com/85816257/151692701-126195ba-9338-425a-a703-08c013836e5a.png)
+
    - Users first time have to sign up, and the rest of the times that they start the App, they have to sign in with their login and password.
 
-## below is a video Record for the application screan:
-#1
+![6](https://user-images.githubusercontent.com/85816257/151692660-56e3c5d2-dfa2-4826-82cd-1d6994ad21f5.png)
 
-https://user-images.githubusercontent.com/85816257/150351665-162a44c5-519f-423e-8437-04fbb92700eb.mp4
-
-#2
-
-![demo 222](https://user-images.githubusercontent.com/85816257/150355604-861709e5-1941-46d7-91f0-054db73260a7.gif)
-
-#3
-
-![demo 222 2](https://user-images.githubusercontent.com/85816257/150355716-be1954cc-1b75-4911-8d04-8951c0e45602.gif)
-
-#4
-
-![demo33](https://user-images.githubusercontent.com/85816257/150356070-2d8d6adb-479b-44ea-b45e-41a79edde06f.gif)
 
