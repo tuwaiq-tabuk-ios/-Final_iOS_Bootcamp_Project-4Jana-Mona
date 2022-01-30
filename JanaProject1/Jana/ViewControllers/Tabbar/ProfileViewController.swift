@@ -14,7 +14,7 @@ class ProfileViewController: UIViewController {
   @IBOutlet weak var lblProfile: UILabel!
   
   let items: [K.Menu] = [.children,
-                                 .logout]
+                         .logout]
   
   
   override func viewDidLoad() {
