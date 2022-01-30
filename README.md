@@ -47,7 +47,8 @@ Close family, special needs teachers, health care providers that use the app wit
     2- Outside the house: garden - hospital - school - restaurant.
     
     
-    ![2](https://user-images.githubusercontent.com/85816257/151692551-dfb4c696-94c9-49d2-8cda-d64c228344ca.png)
+     ![2](https://user-images.githubusercontent.com/85816257/151692551-dfb4c696-94c9-49d2-8cda-d64c228344ca.png)
+
 
    - A chat for all users to exchange information and instructions about the patients they take care.
    
